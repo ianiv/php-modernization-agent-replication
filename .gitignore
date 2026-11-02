@@ -1,0 +1,6 @@
+__pycache__/
+.DS_Store
+pkg/
+pkg_dl/
+runs/*/ws/
+runs/*/score/harness/

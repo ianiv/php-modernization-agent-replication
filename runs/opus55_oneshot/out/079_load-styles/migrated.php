@@ -1,0 +1,175 @@
+<?php
+
+declare(strict_types=0);
+
+/**
+ * Disable error reporting
+ *
+ * Set this to error_reporting( -1 ) for debugging
+ */
+error_reporting(0);
+
+/** Set ABSPATH for execution */
+define('ABSPATH', dirname(__DIR__) . '/');
+define('WPINC', 'wp-includes');
+
+/**
+ * @ignore
+ */
+function __(mixed ...$args): void {}
+
+/**
+ * @ignore
+ */
+function _x(mixed ...$args): void {}
+
+/**
+ * @ignore
+ */
+function add_filter(mixed ...$args): void {}
+
+/**
+ * @ignore
+ */
+function esc_attr(mixed ...$args): void {}
+
+/**
+ * @ignore
+ */
+function apply_filters(mixed ...$args): void {}
+
+/**
+ * @ignore
+ */
+function get_option(mixed ...$args): void {}
+
+/**
+ * @ignore
+ */
+function is_lighttpd_before_150(mixed ...$args): void {}
+
+/**
+ * @ignore
+ */
+function add_action(mixed ...$args): void {}
+
+/**
+ * @ignore
+ */
+function do_action_ref_array(mixed ...$args): void {}
+
+/**
+ * @ignore
+ */
+function get_bloginfo(mixed ...$args): void {}
+
+/**
+ * @ignore
+ */
+function is_admin(mixed ...$args): bool
+{
+    return true;
+}
+
+/**
+ * @ignore
+ */
+function site_url(mixed ...$args): void {}
+
+/**
+ * @ignore
+ */
+function admin_url(mixed ...$args): void {}
+
+/**
+ * @ignore
+ */
+function wp_guess_url(mixed ...$args): void {}
+
+function get_file(string $path): string|false
+{
+    if (function_exists('realpath')) {
+        $path = realpath($path);
+    }
+
+    if (!$path || !@is_file($path)) {
+        return '';
+    }
+
+    return @file_get_contents($path);
+}
+
+require ABSPATH . WPINC . '/script-loader.php';
+require ABSPATH . WPINC . '/version.php';
+
+$rawLoad = $_GET['load'] ?? '';
+
+if (is_array($rawLoad)) {
+    exit;
+}
+
+$load = preg_replace('/[^a-z0-9,_-]+/i', '', (string) $rawLoad);
+$load = array_unique(explode(',', (string) $load));
+
+if (empty($load)) {
+    exit;
+}
+
+$compress = (isset($_GET['c']) && $_GET['c']);
+$force_gzip = ($compress && 'gzip' == $_GET['c']);
+$rtl = (isset($_GET['dir']) && 'rtl' == $_GET['dir']);
+$expires_offset = 31536000; // 1 year
+$out = '';
+
+$wp_styles = new WP_Styles();
+wp_default_styles($wp_styles);
+
+foreach ($load as $handle) {
+    if (!array_key_exists($handle, $wp_styles->registered)) {
+        continue;
+    }
+
+    $style = $wp_styles->registered[$handle];
+    $src = (string) $style->src;
+    $path = ABSPATH . $src;
+
+    if ($rtl && !empty($style->extra['rtl'])) {
+        // All default styles have fully independent RTL files.
+        $path = str_replace('.min.css', '-rtl.min.css', $path);
+    }
+
+    $content = get_file($path) . "\n";
+
+    if (str_starts_with($src, '/' . WPINC . '/css/')) {
+        $content = str_replace('../images/', '../' . WPINC . '/images/', $content);
+        $content = str_replace('../js/tinymce/', '../' . WPINC . '/js/tinymce/', $content);
+        $content = str_replace('../fonts/', '../' . WPINC . '/fonts/', $content);
+        $out .= $content;
+    } else {
+        $out .= str_replace('../images/', 'images/', $content);
+    }
+}
+
+header('Content-Type: text/css; charset=UTF-8');
+header('Expires: ' . gmdate('D, d M Y H:i:s', time() + $expires_offset) . ' GMT');
+header("Cache-Control: public, max-age={$expires_offset}");
+
+if (
+    $compress
+    && !ini_get('zlib.output_compression')
+    && 'ob_gzhandler' != ini_get('output_handler')
+    && isset($_SERVER['HTTP_ACCEPT_ENCODING'])
+) {
+    header('Vary: Accept-Encoding'); // Handle proxies
+    $acceptEncoding = (string) $_SERVER['HTTP_ACCEPT_ENCODING'];
+    if (false !== stripos($acceptEncoding, 'deflate') && function_exists('gzdeflate') && !$force_gzip) {
+        header('Content-Encoding: deflate');
+        $out = gzdeflate($out, 3);
+    } elseif (false !== stripos($acceptEncoding, 'gzip') && function_exists('gzencode')) {
+        header('Content-Encoding: gzip');
+        $out = gzencode($out, 3);
+    }
+}
+
+echo $out;
+exit;

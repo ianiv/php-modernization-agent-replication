@@ -1,0 +1,8 @@
+Files under runs/*/out/*/migrated.php and runs/opus55_oneshot/out/*/response_*.txt are modified
+versions of source files from WordPress 4.0 (https://wordpress.org), Copyright 2011-2014 by the
+contributors. WordPress is released under the GNU General Public License, version 2 or later
+(https://www.gnu.org/licenses/old-licenses/gpl-2.0.html), and these derived files are distributed
+under the same license.
+
+The original study's replication package (Zenodo record 20274676) is not redistributed here;
+setup.sh downloads it from its source.
