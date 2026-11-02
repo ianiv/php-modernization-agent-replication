@@ -71,6 +71,8 @@ It evaluates ``the first answer, not an agent's result after iterating on errors
 It notes that ``newer models may avoid specific errors, but the evaluation design applies unchanged'' (\S V).
 And it recommends treating the first answer as a draft: a staged workflow of lint, load with dependencies, then check behavior, after which ``execution feedback could then drive repair'' (\S V).
 A headline such as ``every evaluated LLM left fewer working files than it started with'' is nonetheless easy to repeat without these qualifications, as evidence that LLMs cannot migrate legacy code.
+Within days of posting, one article headlined the study ``AI Legacy Code Modernization Breaks More Working Code Than It Fixes''~\cite{cava2026generativelabs}, although its body does note that each model got ``one file, one prompt and no chance to run its own output.''
+An automated research digest summarized it, without the qualifier, as an empirical study of ``the real failure rate'' of LLM rewriting of legacy code (our translation)~\cite{bigmodelradar2026}.
 This paper tests that popular reading, not the authors' claim.
 
 The popular reading depends on the two things the study deliberately sets aside.
@@ -218,7 +220,7 @@ The CLI's output cap applies per assistant turn, and the CLI continues a respons
 One response did so.
 For file 014 (\code{module.tag.id3v2.php}, 134\,KB, the largest subject), the model used 84,406 output tokens (18,611 of them thinking) over two turns and 619\,s.
 That exceeds the study's limits of 64,000 tokens and 600 seconds.
-The code alone is about 65,800 tokens, so no response within those limits could contain the whole file, and under the original protocol this file would have had no complete response.
+Opus 5.5's migrated code alone is about 65,800 tokens, so its response could not fit within those limits, and under the original protocol this file would have had no complete Opus response (Sonnet 4's shorter output for this file did fit, and passes all six checks).
 We therefore count file 014 as failed in our primary, \emph{strict} single-shot result (93 compatible files), and we report the response as delivered (94) alongside it.
 No other response exceeded 62,554 output tokens or 417\,s, or needed a second turn.
 
@@ -324,16 +326,19 @@ Sonnet 4: Rector findings resolved & 272 & 272 \\
 Rector outputs: compatible / checks / regressions / repairs & 82 / 581 / 12 / 62 & 82 / 581 / 12 / 62 \\
 Rector \code{Php*} findings on originals & 511 & 511 (per-file isolation); 574 (whole directory) \\
 Findings required / deprecated / optional & 37 / 85 / 389 & 37 / 85 / 389 (reconstructed mapping) \\
-Resolution by necessity, five LLMs (Table IV of~\cite{mahmud2026modernization}) & 15 rates, 5 introduced counts & all match; Llama optional 33.4\% vs.\ 33.7\% \\
+Resolution by necessity, five LLMs (Table IV of~\cite{mahmud2026modernization}) & 15 rates, 5 introduced counts & all match \\
 Required-file split: broken / fixed files & LLMs 5--7 / 6--9 (Llama 1); Rector 1 / 6 & LLMs 5--7 / 6--9 (Llama 1); Rector 1 / 6 \\
-No-fingerprint and lint-fallback compatible files & Table III & all match except Sonnet 4 no-FP (61 vs.\ 62) \\
+No-fingerprint and lint-fallback compatible files & Table III & all match \\
+Re-score of all five LLMs' archived outputs: compatible files & 59 / 50 / 55 / 58 / 33 & all match; check totals within 3 \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 The package contains 631 checks, and both its results file and our run pass 532 of them.
 The extra check is a setup smoke test that the study rightly excludes, giving its 630 and 531.
-The package's archived Rector junit file is stale (it records 32 compatible files), so we re-scored the package's Rector outputs, which reproduces the published Rector row exactly.
+The package's archived junit files for Sonnet 4 and Rector are stale (Sonnet 4's records 467 passed checks, Rector's 32 compatible files), so the re-analysis uses our re-scores of their outputs, which reproduce the published rows exactly.
+We also re-scored the other four models' archived outputs: they reproduce the published compatible-file counts, with check totals within three of the published ones (Flash 394, Pro 448, Codex 470, Llama 337), plausibly from the PHP patch-level difference.
+For those four the re-analysis uses the package's junit files, which match the published totals.
 Rector's count depends on context.
 Run over the whole directory, Rector reports 61 extra \code{RemoveExtraParametersRector} and 7 extra \code{AddOverrideAttributeToOverriddenMethodsRector} findings, because it can resolve signatures defined in other files.
 It also misses 5 that it finds in isolation.
@@ -475,12 +480,12 @@ The original package does not include the rule-to-necessity mapping that~\cite{m
 Thirteen rules are \emph{required}, among them curly-brace offsets, PHP 4 constructors, \code{ereg}, \code{create\_function}, \code{each}, case-insensitive constants, and integer needles.
 Three are \emph{deprecated}: null-to-string arguments, \code{utf8\_encode}/\code{decode}, and \code{final private}.
 The rest are optional.
-The mapping reproduces the published group sizes and all 15 of the study's per-model resolution rates (Table~\ref{tab:repro}); it is in \code{runs/reanalysis/necessity\_mapping.csv}.
+The mapping reproduces the published group sizes, all 15 of the study's per-model resolution rates, and its five introduced counts (Table~\ref{tab:repro}); it is in \code{runs/reanalysis/necessity\_mapping.csv}.
 Table~\ref{tab:necessity} applies it, together with the study's sensitivity analyses and tests, to both Opus conditions.
 
 \begin{table}[t]
 \centering\small
-\caption{Resolution by necessity, the file split by whether a file contains a required finding, and the two sensitivity analyses of~\cite{mahmud2026modernization}. Rows above the rule reproduce that study's Tables III and IV; Rector's resolution is not scored. Broken counts come from the 10 compatible files with a required finding and the 73 without; fixed counts from the 16 incompatible files with one. Source: \code{runs/reanalysis/summary.json}.}
+\caption{Resolution by necessity, the file split by whether a file contains a required finding, and the two sensitivity analyses of~\cite{mahmud2026modernization}. Rows above the rule are computed by our script and reproduce that study's Tables III and IV; Rector's resolution is not scored. Broken counts come from the 10 compatible files with a required finding and the 73 without; fixed counts from the 16 incompatible files with one. Source: \code{runs/reanalysis/summary.json}.}
 \label{tab:necessity}
 \setlength{\tabcolsep}{3.5pt}\begin{tabular}{lrrrrcrr}
 \toprule
@@ -524,7 +529,7 @@ Without fingerprint checks the strict single-shot result rises to 94, because it
 The best result of any earlier model under either analysis is 69.
 
 \paragraph{Significance.}
-We apply the study's tests to 11 comparisons and correct them jointly with Holm--Bonferroni.
+We apply the study's tests to 11 comparisons of our choosing and correct them jointly with Holm--Bonferroni; this family differs from the study's 21 pairwise comparisons among its own approaches.
 Both Opus conditions have significantly more compatible files than the unchanged code.
 For the strict single-shot condition the counts are 11 files gained and 1 lost, a difference of $+10$ with 95\% CI $[4, 17]$ and adjusted $p = 0.025$.
 For the agent they are 16 and 0, a difference of $+16$ with CI $[9, 23]$ and $p = 2\times10^{-4}$.
@@ -637,7 +642,7 @@ The agent chose a remaining Rector finding over a broken caller.
 The original condition measures how often a model can rewrite a file correctly with no ability to run it.
 That is a meaningful quantity: it bounds what a chat-window workflow delivers, and for the models of 2025 it showed they were not reliable when they could not observe behavior.
 The study's conclusion is scoped to that condition.
-Generalizing it to ``LLMs cannot migrate code'' is not supported by that study, and our results contradict it.
+Generalizing it to ``LLMs cannot migrate code'' is not supported by that study, and our results contradict it: under the same protocol for a current model, and with the file's tests for an agent.
 
 \paragraph{Agreement with the original study.}
 Our agent condition is, in effect, the staged workflow that~\cite{mahmud2026modernization} recommends in its implications: lint, load with dependencies, check behavior, and let execution feedback drive repair.
@@ -695,7 +700,7 @@ We cannot rule out effects on the new outputs.
 Hidden checks are a sample of each file's contract.
 Rector \code{Php*} findings are a proxy for modernization that rewards optional style changes.
 A low resolution rate can reflect a deliberate choice not to change behavior, as Section~\ref{sec:rq3} shows, and aggregate resolution mixes required with optional changes (Section~\ref{sec:necessity}).
-The necessity mapping is our reconstruction; it reproduces every published rate, but a few singleton rules could be grouped differently.
+The necessity mapping is our reconstruction; it reproduces every published rate, but a few rules that fire only once could arguably be grouped differently.
 
 \paragraph{Training-data contamination (internal).}
 Later WordPress releases contain PHP 7- and 8-compatible versions of many of these files, and a newer model has likely seen more of them.
@@ -733,7 +738,7 @@ The scoring code is the original study's harness, and all outputs, final reports
 \section{Conclusion}
 
 The study we revisit found that five 2025-era LLMs, asked once per file and without feedback, left legacy PHP less working than they found it, and it scoped that finding carefully.
-The popular reading of that study, that LLMs leave legacy code less working than they found it, does not hold for a current model under the same protocol, and does not hold at all once the model can run its output.
+The popular reading of that study, that LLMs leave legacy code less working than they found it, does not hold for a current model under the same protocol, and does not hold at all once the model can run its output against the file's tests.
 Under the identical single-shot protocol and limits, Claude Opus 5.5 produces 93 compatible files against 83 for the unchanged code, and it breaks only one of the 73 compatible files that need no required change.
 As a coding agent with an interpreter, the file's checks, and Rector, the workflow the original study recommends, it produces 99 with no regressions.
 Because the agent can read the checks that score it, that figure describes migration with a test suite in hand, not blind generalization.

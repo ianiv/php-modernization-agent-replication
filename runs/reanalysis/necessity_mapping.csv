@@ -31,8 +31,8 @@ Rector\Php72\Rector\FuncCall\CreateFunctionToAnonymousFunctionRector,required,2
 Rector\Php70\Rector\MethodCall\ThisCallOnStaticMethodToStaticCallRector,optional,2
 Rector\Php72\Rector\FuncCall\StringifyDefineRector,required,1
 Rector\Php55\Rector\Class_\ClassConstantToSelfClassRector,optional,1
-Rector\Php71\Rector\Assign\AssignArrayToStringRector,required,1
 Rector\Php72\Rector\While_\WhileEachToForeachRector,required,1
+Rector\Php71\Rector\Assign\AssignArrayToStringRector,required,1
 Rector\Php73\Rector\FuncCall\SetCookieRector,optional,1
 Rector\Php74\Rector\Closure\ClosureToArrowFunctionRector,optional,1
 Rector\Php73\Rector\FuncCall\ArrayKeyFirstLastRector,optional,1

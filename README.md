@@ -37,8 +37,10 @@ unmigrated library, which PHP 8 rejects. Every approach in the original study al
 - Re-scoring the package's Rector outputs reproduces the published Rector row (82 / 581 / 12 / 62). The package's archived
   Rector junit is stale (32 compatible files), so it is not used (`runs/rector_replay/score`).
 - A reconstructed rule-to-necessity mapping (the package does not ship one) reproduces the published 37 / 85 / 389 split and
-  the per-model resolution-by-necessity table; the sensitivity analyses reproduce Table III except Sonnet 4 without
-  fingerprint checks (61 vs. 62) (`harness/reanalysis.py`, `runs/reanalysis/`).
+  the per-model resolution-by-necessity table and the sensitivity analyses of Table III (`harness/reanalysis.py`,
+  `runs/reanalysis/`). Sonnet 4's archived junit is also stale (467 checks), so its re-score is used.
+- Re-scoring the other four models' archived outputs reproduces their compatible-file counts, with check totals within 3
+  of the published figures (`runs/replay_*/score`).
 
 ## Layout
 

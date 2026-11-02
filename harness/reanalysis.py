@@ -76,9 +76,12 @@ FP = {k for k in KEYS if "semantic" in k[2].lower() or "fingerprint" in k[2].low
 FILES = sorted({k[0] for k in KEYS})
 HAS_REQ = {f for f in FILES if any(group(r) == "required" for r in ORIG.get(f, ()))}
 
+# Check outcomes per approach. The package's archived junit files for Flash, Pro, Codex and Llama match the published
+# check totals and are used as-is (our re-scores in runs/replay_*/ reproduce their compatible-file counts, with check
+# totals within 3 of the published ones). Sonnet 4's and Rector's archived files are stale, so our re-scores are used.
 A = os.path.join(WP, "tools", "archive")
 APPROACHES = {
-    "Claude Sonnet 4": (f"{A}/claude_sonnet_4_20250514/junit.xml", f"{ROOT}/runs/sonnet_replay/score/rector.jsonl", "claude_sonnet_4_20250514"),
+    "Claude Sonnet 4": (f"{ROOT}/runs/sonnet_replay/score/junit.xml", f"{ROOT}/runs/sonnet_replay/score/rector.jsonl", "claude_sonnet_4_20250514"),
     "Gemini 2.5 Flash": (f"{A}/gemini_2_5_flash/junit.xml", f"{VAL}/gemini_2_5_flash.jsonl", "gemini_2_5_flash"),
     "Gemini 2.5 Pro": (f"{A}/gemini_2_5_pro/junit.xml", f"{VAL}/gemini_2_5_pro.jsonl", "gemini_2_5_pro"),
     "GPT-5 Codex": (f"{A}/gpt_5_codex/junit.xml", f"{VAL}/gpt_5_codex.jsonl", "gpt_5_codex"),

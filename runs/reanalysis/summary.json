@@ -1,8 +1,8 @@
 {
  "group_sizes": {
+  "deprecated": 85,
   "optional": 389,
-  "required": 37,
-  "deprecated": 85
+  "required": 37
  },
  "fingerprint_checks": 80,
  "files_with_required": 26,
@@ -10,22 +10,22 @@
  "approaches": {
   "Claude Sonnet 4": {
    "compatible": 59,
-   "compatible_no_fp": 61,
+   "compatible_no_fp": 62,
    "compatible_lint_fallback": 67,
    "lint_failures": 12,
    "broken_req": 6,
    "fixed_req": 7,
    "broken_noreq": 26,
    "fixed_noreq": 1,
-   "checks_passed": 467,
+   "checks_passed": 473,
    "resolution_by_group": {
+    "deprecated": 8.2,
     "optional": 60.7,
-    "required": 78.4,
-    "deprecated": 8.2
+    "required": 78.4
    },
    "resolved_by_group": {
-    "optional": 236,
     "required": 29,
+    "optional": 236,
     "deprecated": 7
    },
    "introduced": 17,
@@ -43,14 +43,14 @@
    "fixed_noreq": 1,
    "checks_passed": 393,
    "resolution_by_group": {
+    "deprecated": 22.4,
     "optional": 57.8,
-    "required": 78.4,
-    "deprecated": 22.4
+    "required": 78.4
    },
    "resolved_by_group": {
+    "deprecated": 19,
     "optional": 225,
-    "required": 29,
-    "deprecated": 19
+    "required": 29
    },
    "introduced": 17,
    "resolved_total": 273,
@@ -67,13 +67,13 @@
    "fixed_noreq": 1,
    "checks_passed": 446,
    "resolution_by_group": {
+    "deprecated": 22.4,
     "optional": 83.3,
-    "required": 78.4,
-    "deprecated": 22.4
+    "required": 78.4
    },
    "resolved_by_group": {
-    "optional": 324,
     "required": 29,
+    "optional": 324,
     "deprecated": 19
    },
    "introduced": 21,
@@ -91,9 +91,9 @@
    "fixed_noreq": 1,
    "checks_passed": 467,
    "resolution_by_group": {
+    "deprecated": 32.9,
     "optional": 63.8,
-    "required": 56.8,
-    "deprecated": 32.9
+    "required": 56.8
    },
    "resolved_by_group": {
     "required": 21,
@@ -115,18 +115,18 @@
    "fixed_noreq": 0,
    "checks_passed": 337,
    "resolution_by_group": {
-    "optional": 33.4,
-    "required": 45.9,
-    "deprecated": 9.4
+    "deprecated": 9.4,
+    "optional": 33.7,
+    "required": 45.9
    },
    "resolved_by_group": {
-    "optional": 130,
+    "optional": 131,
     "required": 17,
     "deprecated": 8
    },
    "introduced": 18,
-   "resolved_total": 155,
-   "optional_share_of_resolved": 83.9
+   "resolved_total": 156,
+   "optional_share_of_resolved": 84.0
   },
   "Rector": {
    "compatible": 82,
@@ -149,14 +149,14 @@
    "fixed_noreq": 1,
    "checks_passed": 617,
    "resolution_by_group": {
+    "deprecated": 45.9,
     "optional": 72.8,
-    "required": 62.2,
-    "deprecated": 45.9
+    "required": 62.2
    },
    "resolved_by_group": {
+    "deprecated": 39,
     "optional": 283,
-    "required": 23,
-    "deprecated": 39
+    "required": 23
    },
    "introduced": 27,
    "resolved_total": 345,
@@ -173,14 +173,14 @@
    "fixed_noreq": 1,
    "checks_passed": 611,
    "resolution_by_group": {
+    "deprecated": 44.7,
     "optional": 71.7,
-    "required": 59.5,
-    "deprecated": 44.7
+    "required": 59.5
    },
    "resolved_by_group": {
+    "deprecated": 38,
     "optional": 279,
-    "required": 22,
-    "deprecated": 38
+    "required": 22
    },
    "introduced": 26,
    "resolved_total": 339,
@@ -197,14 +197,14 @@
    "fixed_noreq": 1,
    "checks_passed": 624,
    "resolution_by_group": {
+    "deprecated": 91.8,
     "optional": 94.1,
-    "required": 75.7,
-    "deprecated": 91.8
+    "required": 75.7
    },
    "resolved_by_group": {
+    "deprecated": 78,
     "optional": 366,
-    "required": 28,
-    "deprecated": 78
+    "required": 28
    },
    "introduced": 4,
    "resolved_total": 472,
