@@ -4,3 +4,6 @@ pkg/
 pkg_dl/
 runs/*/ws/
 runs/*/score/harness/
+pkg
+.claude/
+wp_releases/

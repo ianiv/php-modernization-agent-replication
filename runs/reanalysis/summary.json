@@ -1,0 +1,359 @@
+{
+ "group_sizes": {
+  "optional": 389,
+  "required": 37,
+  "deprecated": 85
+ },
+ "fingerprint_checks": 80,
+ "files_with_required": 26,
+ "files_with_required_compatible_unchanged": 10,
+ "approaches": {
+  "Claude Sonnet 4": {
+   "compatible": 59,
+   "compatible_no_fp": 61,
+   "compatible_lint_fallback": 67,
+   "lint_failures": 12,
+   "broken_req": 6,
+   "fixed_req": 7,
+   "broken_noreq": 26,
+   "fixed_noreq": 1,
+   "checks_passed": 467,
+   "resolution_by_group": {
+    "optional": 60.7,
+    "required": 78.4,
+    "deprecated": 8.2
+   },
+   "resolved_by_group": {
+    "optional": 236,
+    "required": 29,
+    "deprecated": 7
+   },
+   "introduced": 17,
+   "resolved_total": 272,
+   "optional_share_of_resolved": 86.8
+  },
+  "Gemini 2.5 Flash": {
+   "compatible": 50,
+   "compatible_no_fp": 53,
+   "compatible_lint_fallback": 65,
+   "lint_failures": 20,
+   "broken_req": 7,
+   "fixed_req": 6,
+   "broken_noreq": 33,
+   "fixed_noreq": 1,
+   "checks_passed": 393,
+   "resolution_by_group": {
+    "optional": 57.8,
+    "required": 78.4,
+    "deprecated": 22.4
+   },
+   "resolved_by_group": {
+    "optional": 225,
+    "required": 29,
+    "deprecated": 19
+   },
+   "introduced": 17,
+   "resolved_total": 273,
+   "optional_share_of_resolved": 82.4
+  },
+  "Gemini 2.5 Pro": {
+   "compatible": 55,
+   "compatible_no_fp": 56,
+   "compatible_lint_fallback": 64,
+   "lint_failures": 13,
+   "broken_req": 6,
+   "fixed_req": 9,
+   "broken_noreq": 32,
+   "fixed_noreq": 1,
+   "checks_passed": 446,
+   "resolution_by_group": {
+    "optional": 83.3,
+    "required": 78.4,
+    "deprecated": 22.4
+   },
+   "resolved_by_group": {
+    "optional": 324,
+    "required": 29,
+    "deprecated": 19
+   },
+   "introduced": 21,
+   "resolved_total": 372,
+   "optional_share_of_resolved": 87.1
+  },
+  "GPT-5 Codex": {
+   "compatible": 58,
+   "compatible_no_fp": 60,
+   "compatible_lint_fallback": 69,
+   "lint_failures": 18,
+   "broken_req": 5,
+   "fixed_req": 7,
+   "broken_noreq": 28,
+   "fixed_noreq": 1,
+   "checks_passed": 467,
+   "resolution_by_group": {
+    "optional": 63.8,
+    "required": 56.8,
+    "deprecated": 32.9
+   },
+   "resolved_by_group": {
+    "required": 21,
+    "optional": 248,
+    "deprecated": 28
+   },
+   "introduced": 20,
+   "resolved_total": 297,
+   "optional_share_of_resolved": 83.5
+  },
+  "Llama 3.3 70B": {
+   "compatible": 33,
+   "compatible_no_fp": 36,
+   "compatible_lint_fallback": 45,
+   "lint_failures": 23,
+   "broken_req": 7,
+   "fixed_req": 1,
+   "broken_noreq": 44,
+   "fixed_noreq": 0,
+   "checks_passed": 337,
+   "resolution_by_group": {
+    "optional": 33.4,
+    "required": 45.9,
+    "deprecated": 9.4
+   },
+   "resolved_by_group": {
+    "optional": 130,
+    "required": 17,
+    "deprecated": 8
+   },
+   "introduced": 18,
+   "resolved_total": 155,
+   "optional_share_of_resolved": 83.9
+  },
+  "Rector": {
+   "compatible": 82,
+   "compatible_no_fp": 82,
+   "compatible_lint_fallback": 82,
+   "lint_failures": 1,
+   "broken_req": 1,
+   "fixed_req": 6,
+   "broken_noreq": 6,
+   "fixed_noreq": 0
+  },
+  "Opus 5.5 single-shot": {
+   "compatible": 94,
+   "compatible_no_fp": 95,
+   "compatible_lint_fallback": 94,
+   "lint_failures": 0,
+   "broken_req": 0,
+   "fixed_req": 11,
+   "broken_noreq": 1,
+   "fixed_noreq": 1,
+   "checks_passed": 617,
+   "resolution_by_group": {
+    "optional": 72.8,
+    "required": 62.2,
+    "deprecated": 45.9
+   },
+   "resolved_by_group": {
+    "optional": 283,
+    "required": 23,
+    "deprecated": 39
+   },
+   "introduced": 27,
+   "resolved_total": 345,
+   "optional_share_of_resolved": 82.0
+  },
+  "Opus 5.5 single-shot (strict)": {
+   "compatible": 93,
+   "compatible_no_fp": 94,
+   "compatible_lint_fallback": 93,
+   "lint_failures": 0,
+   "broken_req": 0,
+   "fixed_req": 10,
+   "broken_noreq": 1,
+   "fixed_noreq": 1,
+   "checks_passed": 611,
+   "resolution_by_group": {
+    "optional": 71.7,
+    "required": 59.5,
+    "deprecated": 44.7
+   },
+   "resolved_by_group": {
+    "optional": 279,
+    "required": 22,
+    "deprecated": 38
+   },
+   "introduced": 26,
+   "resolved_total": 339,
+   "optional_share_of_resolved": 82.3
+  },
+  "Opus 5.5 agent": {
+   "compatible": 99,
+   "compatible_no_fp": 99,
+   "compatible_lint_fallback": 99,
+   "lint_failures": 0,
+   "broken_req": 0,
+   "fixed_req": 15,
+   "broken_noreq": 0,
+   "fixed_noreq": 1,
+   "checks_passed": 624,
+   "resolution_by_group": {
+    "optional": 94.1,
+    "required": 75.7,
+    "deprecated": 91.8
+   },
+   "resolved_by_group": {
+    "optional": 366,
+    "required": 28,
+    "deprecated": 78
+   },
+   "introduced": 4,
+   "resolved_total": 472,
+   "optional_share_of_resolved": 77.5
+  }
+ },
+ "mcnemar": [
+  {
+   "a": "Opus 5.5 single-shot",
+   "b": "Unchanged originals",
+   "a_only": 12,
+   "b_only": 1,
+   "diff": 11,
+   "ci95": [
+    5,
+    18
+   ],
+   "p": 0.00341796875,
+   "p_holm": 0.01708984375
+  },
+  {
+   "a": "Opus 5.5 single-shot (strict)",
+   "b": "Unchanged originals",
+   "a_only": 11,
+   "b_only": 1,
+   "diff": 10,
+   "ci95": [
+    4,
+    17
+   ],
+   "p": 0.00634765625,
+   "p_holm": 0.025390625
+  },
+  {
+   "a": "Opus 5.5 agent",
+   "b": "Opus 5.5 single-shot (strict)",
+   "a_only": 6,
+   "b_only": 0,
+   "diff": 6,
+   "ci95": [
+    2,
+    11
+   ],
+   "p": 0.03125,
+   "p_holm": 0.0625
+  },
+  {
+   "a": "Opus 5.5 single-shot (strict)",
+   "b": "Claude Sonnet 4",
+   "a_only": 35,
+   "b_only": 1,
+   "diff": 34,
+   "ci95": [
+    24,
+    44
+   ],
+   "p": 1.076841726899147e-09,
+   "p_holm": 9.691575542092323e-09
+  },
+  {
+   "a": "Opus 5.5 single-shot (strict)",
+   "b": "Rector",
+   "a_only": 13,
+   "b_only": 2,
+   "diff": 11,
+   "ci95": [
+    4,
+    19
+   ],
+   "p": 0.00738525390625,
+   "p_holm": 0.025390625
+  },
+  {
+   "a": "Opus 5.5 agent",
+   "b": "Unchanged originals",
+   "a_only": 16,
+   "b_only": 0,
+   "diff": 16,
+   "ci95": [
+    9,
+    23
+   ],
+   "p": 3.0517578125e-05,
+   "p_holm": 0.000213623046875
+  },
+  {
+   "a": "Opus 5.5 agent",
+   "b": "Opus 5.5 single-shot",
+   "a_only": 5,
+   "b_only": 0,
+   "diff": 5,
+   "ci95": [
+    1,
+    9
+   ],
+   "p": 0.0625,
+   "p_holm": 0.0625
+  },
+  {
+   "a": "Opus 5.5 single-shot",
+   "b": "Claude Sonnet 4",
+   "a_only": 35,
+   "b_only": 0,
+   "diff": 35,
+   "ci95": [
+    26,
+    44
+   ],
+   "p": 5.820766091346741e-11,
+   "p_holm": 5.820766091346741e-10
+  },
+  {
+   "a": "Opus 5.5 agent",
+   "b": "Claude Sonnet 4",
+   "a_only": 40,
+   "b_only": 0,
+   "diff": 40,
+   "ci95": [
+    30,
+    50
+   ],
+   "p": 1.8189894035458565e-12,
+   "p_holm": 2.000888343900442e-11
+  },
+  {
+   "a": "Opus 5.5 single-shot",
+   "b": "Rector",
+   "a_only": 13,
+   "b_only": 1,
+   "diff": 12,
+   "ci95": [
+    5,
+    19
+   ],
+   "p": 0.0018310546875,
+   "p_holm": 0.010986328125
+  },
+  {
+   "a": "Opus 5.5 agent",
+   "b": "Rector",
+   "a_only": 17,
+   "b_only": 0,
+   "diff": 17,
+   "ci95": [
+    10,
+    24
+   ],
+   "p": 1.52587890625e-05,
+   "p_holm": 0.0001220703125
+  }
+ ]
+}
