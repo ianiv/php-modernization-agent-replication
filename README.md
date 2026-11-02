@@ -45,7 +45,8 @@ harness/
   score.sh, metrics.py          scoring on a pristine copy of the original harness
 runs/
   original_baseline/            junit + testdox for the unchanged originals
-  opus55/out/<id>/              agent: transcript (agent.json), prompt, migrated.php, result.json, tamper.txt
+  opus55/out/<id>/              agent: final report + run stats (agent.json), prompt, migrated.php, result.json, tamper.txt
+  opus55/reports/               readable Markdown page per agent session, plus an index table
   opus55_oneshot/out/<id>/      single-shot: raw responses, migrated.php, result.json
   */score/                      summary.json, per_file.csv, rector.jsonl, junit.xml, testdox.txt, phpunit.log
 ```
@@ -68,8 +69,11 @@ models. Remove `runs/<run>/out` to regenerate them.
 
 ## Notes
 
-- **Paths.** Absolute local paths in transcripts and logs were replaced with `<repo>` (the repository root) or `~`.
-  The transcripts are otherwise unedited.
+- **Paths.** Absolute local paths in the run records and logs were replaced with `<repo>` (the repository root) or `~`.
+  The records are otherwise unedited.
+- **Agent sessions.** The agent runs used `claude -p --output-format json`, which saves each session's final report
+  and statistics but not the turn-by-turn conversation. `runs/opus55/reports/` presents those records readably
+  (`python3 -I harness/render_reports.py`). Single-shot responses are complete, since each is a single call.
 - **Not included.** This repository does not include the original replication package. `setup.sh` downloads it from
   Zenodo.
 - **WordPress code.** The `migrated.php` and `response_*.txt` files are modified versions of WordPress 4.0 source files.

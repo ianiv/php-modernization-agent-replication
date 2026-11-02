@@ -87,7 +87,7 @@ Our contributions are:
   \item An independent reproduction of the study's evaluation on macOS with PHP 8.3 in a Linux VM. It matches the no-change baseline check for check and the published Sonnet 4 results exactly, and it identifies a one-check discrepancy between the paper's text and its package.
   \item A single-shot replication with Opus 5.5 that keeps the study's prompt and extractor. Opus 5.5 alone exceeds the no-change baseline (94 vs.\ 83 compatible files).
   \item An agent harness, with tamper-proof scoring, that reaches 99 of 100 compatible files with zero regressions. We show that the remaining file is not passable under the single-file protocol.
-  \item A released replication package with all transcripts, outputs, and scores.
+  \item A released replication package with all outputs, scores, and each agent session's final report and run statistics.
 \end{enumerate}
 
 \section{Background and Related Work}
@@ -410,7 +410,7 @@ No agent edited a file outside its target.
 The tamper log is empty for all 100 sessions.
 All 100 sessions hit at least one permission denial, 123 in total.
 Most were compound shell commands for bulk edits (\code{cd \ldots{} \&\& perl -pi \ldots}, 81 cases) that fell outside the allowlist.
-The agents fell back to the Edit tool or to token-based rewrite scripts run through \code{tools/php}.
+Despite the denials, every session ended with a migrated file and a final report.
 
 \paragraph{Cost and effort.}
 The agent run cost \$39.66 in total: a median of \$0.30, 14 turns, and 73\,s per file, with at most \$1.56, 59 turns, and 359\,s.
@@ -481,7 +481,7 @@ But WordPress's own \code{wp\_xmlrpc\_server} still calls \code{\$this->IXR\_Ser
 In PHP 8 a same-name method no longer acts as a constructor.
 Rector's rename restores construction but makes that explicit call fail with an undefined-method error.
 Rector also has no rule for \code{count()} on \code{null}, which throws a \code{TypeError} in PHP 8.
-The agent found both by reading the callers and running the checks.
+According to its final report, the agent found both by reading the callers and running the checks.
 
 \begin{lstlisting}[float=t,caption={File 004: original, Rector's rewrite, and the Opus 5.5 agent's output (excerpts).},label={lst:ixr}]
 // Original (WordPress 4.0)
@@ -570,9 +570,14 @@ A low resolution rate can reflect a deliberate choice not to change behavior, as
 The 100 files are a purposive sample from one application at one version, as~\cite{mahmud2026modernization} notes.
 We inherit that limit and add one model from one vendor.
 
+\paragraph{Agent process not recorded (internal).}
+The agent runs used Claude Code's headless JSON output, which records each session's final report and statistics (turns, tokens, cost, permission denials) but not the turn-by-turn conversation.
+Statements about how an agent reached a result therefore rest on its own final report.
+The results themselves do not: every outcome is verified independently by scoring the submitted file.
+
 \paragraph{Evaluator independence.}
 The agent harness, prompts, and analysis were built with the help of a Claude-based coding assistant, from the same vendor as the model evaluated.
-The scoring code is the original study's harness, and the full transcripts are released for inspection.
+The scoring code is the original study's harness, and all outputs, final reports, and run statistics are released for inspection.
 
 \section{Conclusion}
 
@@ -585,9 +590,9 @@ The question for LLM-based modernization is no longer whether a model can rewrit
 
 \paragraph{Data availability.}
 The original replication package is on Zenodo~\cite{mahmud2026package}.
-Our package contains the bash port of the runner, the workspace and tool scripts, the agent prompt, the single-shot runner, the scoring and metrics code, all 100 agent transcripts, all single-shot responses, the migrated files from both conditions, and per-file and summary scores.
+Our package contains the bash port of the runner, the workspace and tool scripts, the agent prompt, the single-shot runner, the scoring and metrics code, each agent session's final report and run statistics, all single-shot responses, the migrated files from both conditions, and per-file and summary scores.
 It is public at \url{https://github.com/ianiv/php-modernization-agent-replication}.
-Transcripts there have local paths replaced with \code{<repo>} and are otherwise unedited.
+Local paths in the released records are replaced with \code{<repo>}; the records are otherwise unedited.
 
 \bibliographystyle{unsrtnat}
 \bibliography{refs}
