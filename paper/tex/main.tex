@@ -69,7 +69,10 @@ The rule-based tool Rector reaches 82.
 That finding is accurate for the condition the study measures, but it is easy to read more broadly than it should be.
 In the study, a model sees one file and nothing else, and it never runs, lints, or tests its output.
 Practitioners do not use LLMs this way for migrations.
-Coding agents iterate against an interpreter and a test suite, and the newest models differ substantially from those evaluated.
+Coding agents iterate against an interpreter and a test suite.
+The models evaluated in~\cite{mahmud2026modernization} were released between December 2024 (Llama 3.3 70B~\cite{meta2024llama33}) and September 2025 (GPT-5 Codex~\cite{openai2025codex}), 13 to 23 months before the study was submitted in October 2026.
+Claude Sonnet 4 dates from May 2025~\cite{anthropic2025claude4}, and both Gemini 2.5 models became generally available in June 2025~\cite{google2025gemini25}.
+Newer model generations have been released since, and we evaluate one of them.
 Two questions therefore remain open: how much of the gap comes from the model generation, and how much comes from the absence of execution feedback.
 
 We answer them with the study's own artifacts. We pose three research questions:
