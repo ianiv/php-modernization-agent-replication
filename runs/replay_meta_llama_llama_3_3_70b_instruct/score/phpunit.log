@@ -12,7 +12,7 @@ FFFFFFFFFFFFFFFFFFFFFFFFF.........FFFFFF..FF.FF.FFF.FFFFFFFFFFF 567 / 631 ( 89%)
 F.FFF.F.F..F................F.....FFFFFF..F..F............F.F.F 630 / 631 ( 99%)
 .                                                               631 / 631 (100%)
 
-Time: 05:08.308, Memory: 22.00 MB
+Time: 05:03.190, Memory: 22.00 MB
 
 There were 293 failures:
 
@@ -2094,9 +2094,9 @@ Array
     [ok] => 
     [exception_class] => Error
     [message] => Cannot access private property SimplePie_Locator::$timeout
-    [file] => /tmp/loc_runner_diWAhJ(238) : eval()'d code
+    [file] => /tmp/loc_runner_ca908i(238) : eval()'d code
     [line] => 23
-    [trace] => #0 /tmp/loc_runner_diWAhJ(238): eval()
+    [trace] => #0 /tmp/loc_runner_ca908i(238): eval()
 #1 {main}
     [output] => 
 Deprecated: Optional parameter $type declared before required parameter $working is implicitly treated as a required parameter in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/045_locator_runtime_load/wp-includes/SimplePie/Locator.php on line 92
@@ -2115,12 +2115,12 @@ Array
     [ok] => 
     [exception_class] => Exception
     [message] => Unknown registry call: Misc::space_separated_tokens
-    [file] => /tmp/loc_runner_bgrugf
+    [file] => /tmp/loc_runner_EIxtu0
     [line] => 228
     [trace] => #0 /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/045_locator_base_autodiscovery/wp-includes/SimplePie/Locator.php(198): SimplePie_Registry->call('Misc', 'space_separated...', Array)
 #1 /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/045_locator_base_autodiscovery/wp-includes/SimplePie/Locator.php(175): SimplePie_Locator->search_elements_by_tag('link', Array, Array)
-#2 /tmp/loc_runner_bgrugf(238) : eval()'d code(18): SimplePie_Locator->autodiscovery()
-#3 /tmp/loc_runner_bgrugf(238): eval()
+#2 /tmp/loc_runner_EIxtu0(238) : eval()'d code(18): SimplePie_Locator->autodiscovery()
+#3 /tmp/loc_runner_EIxtu0(238): eval()
 #4 {main}
     [output] => 
 Deprecated: Optional parameter $type declared before required parameter $working is implicitly treated as a required parameter in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/045_locator_base_autodiscovery/wp-includes/SimplePie/Locator.php on line 92
@@ -2139,9 +2139,9 @@ Array
     [ok] => 
     [exception_class] => Error
     [message] => Cannot access private property SimplePie_Locator::$local
-    [file] => /tmp/loc_runner_qL2qtz(238) : eval()'d code
+    [file] => /tmp/loc_runner_jUNaey(238) : eval()'d code
     [line] => 18
-    [trace] => #0 /tmp/loc_runner_qL2qtz(238): eval()
+    [trace] => #0 /tmp/loc_runner_jUNaey(238): eval()
 #1 {main}
     [output] => 
 Deprecated: Optional parameter $type declared before required parameter $working is implicitly treated as a required parameter in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/045_locator_links_extension/wp-includes/SimplePie/Locator.php on line 92
@@ -2160,9 +2160,9 @@ Array
     [ok] => 
     [exception_class] => Error
     [message] => Cannot access private property SimplePie_Locator::$local
-    [file] => /tmp/loc_runner_49rPfm(238) : eval()'d code
+    [file] => /tmp/loc_runner_PDz8nT(238) : eval()'d code
     [line] => 21
-    [trace] => #0 /tmp/loc_runner_49rPfm(238): eval()
+    [trace] => #0 /tmp/loc_runner_PDz8nT(238): eval()
 #1 {main}
     [output] => 
 Deprecated: Optional parameter $type declared before required parameter $working is implicitly treated as a required parameter in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/045_locator_find_local_extension/wp-includes/SimplePie/Locator.php on line 92
@@ -2181,9 +2181,9 @@ Array
     [ok] => 
     [exception_class] => Error
     [message] => Cannot access private property SimplePie_Locator::$checked_feeds
-    [file] => /tmp/loc_runner_M39Huy(238) : eval()'d code
+    [file] => /tmp/loc_runner_Bw7QX0(238) : eval()'d code
     [line] => 31
-    [trace] => #0 /tmp/loc_runner_M39Huy(238): eval()
+    [trace] => #0 /tmp/loc_runner_Bw7QX0(238): eval()
 #1 {main}
     [output] => 
 Deprecated: Optional parameter $type declared before required parameter $working is implicitly treated as a required parameter in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/045_locator_semantic_fingerprint/wp-includes/SimplePie/Locator.php on line 92
@@ -2204,7 +2204,7 @@ Array
     [message] => Class "GetId3Handler" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/046_flv_runtime_load/wp-includes/ID3/module.audio-video.flv.php
     [line] => 26
-    [trace] => #0 /tmp/flv_runner_KQZgVC(194): require_once()
+    [trace] => #0 /tmp/flv_runner_dzh5aX(194): require_once()
 #1 {main}
     [output] => 
 Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/046_flv_runtime_load/wp-includes/ID3/module.audio-video.flv.php on line 137
@@ -2227,7 +2227,7 @@ Array
     [message] => Class "GetId3Handler" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/046_flv_invalid_signature/wp-includes/ID3/module.audio-video.flv.php
     [line] => 26
-    [trace] => #0 /tmp/flv_runner_L8Mas9(194): require_once()
+    [trace] => #0 /tmp/flv_runner_lsm6dP(194): require_once()
 #1 {main}
     [output] => 
 Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/046_flv_invalid_signature/wp-includes/ID3/module.audio-video.flv.php on line 137
@@ -2250,7 +2250,7 @@ Array
     [message] => Class "GetId3Handler" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/046_flv_header_byte_decode_no_analyze/wp-includes/ID3/module.audio-video.flv.php
     [line] => 26
-    [trace] => #0 /tmp/flv_runner_bY469i(194): require_once()
+    [trace] => #0 /tmp/flv_runner_kFysTW(194): require_once()
 #1 {main}
     [output] => 
 Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/046_flv_header_byte_decode_no_analyze/wp-includes/ID3/module.audio-video.flv.php on line 137
@@ -2273,7 +2273,7 @@ Array
     [message] => Class "GetId3Handler" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/046_flv_amf_reader/wp-includes/ID3/module.audio-video.flv.php
     [line] => 26
-    [trace] => #0 /tmp/flv_runner_y8eyhv(194): require_once()
+    [trace] => #0 /tmp/flv_runner_7b6Neq(194): require_once()
 #1 {main}
     [output] => 
 Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/046_flv_amf_reader/wp-includes/ID3/module.audio-video.flv.php on line 137
@@ -2296,7 +2296,7 @@ Array
     [message] => Class "GetId3Handler" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/046_flv_semantic_fingerprint/wp-includes/ID3/module.audio-video.flv.php
     [line] => 26
-    [trace] => #0 /tmp/flv_runner_k4yzTM(194): require_once()
+    [trace] => #0 /tmp/flv_runner_EuiZYm(194): require_once()
 #1 {main}
     [output] => 
 Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/046_flv_semantic_fingerprint/wp-includes/ID3/module.audio-video.flv.php on line 137
@@ -2317,9 +2317,9 @@ Array
     [ok] => 
     [exception_class] => Error
     [message] => Cannot access private property SimplePie_Parser::$separator
-    [file] => /tmp/simplepie_parser_runner_hjdBsm(146) : eval()'d code
+    [file] => /tmp/simplepie_parser_runner_zwj3ba(146) : eval()'d code
     [line] => 11
-    [trace] => #0 /tmp/simplepie_parser_runner_hjdBsm(146): eval()
+    [trace] => #0 /tmp/simplepie_parser_runner_zwj3ba(146): eval()
 #1 {main}
     [output] => 
 )
@@ -2351,8 +2351,8 @@ Array
     [message] => Cannot assign null to property SimplePie_Parser::$data of type array
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/049_simplepie_parser_manual_stack/wp-includes/SimplePie/Parser.php
     [line] => 275
-    [trace] => #0 /tmp/simplepie_parser_runner_v8w0I5(146) : eval()'d code(5): SimplePie_Parser->tag_open(NULL, 'http://example....', Array)
-#1 /tmp/simplepie_parser_runner_v8w0I5(146): eval()
+    [trace] => #0 /tmp/simplepie_parser_runner_xmHDSj(146) : eval()'d code(5): SimplePie_Parser->tag_open(NULL, 'http://example....', Array)
+#1 /tmp/simplepie_parser_runner_xmHDSj(146): eval()
 #2 {main}
     [output] => 
 )
@@ -2373,8 +2373,8 @@ Array
     [line] => 275
     [trace] => #0 [internal function]: SimplePie_Parser->tag_open(Object(XMLParser), 'rss', Array)
 #1 /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/049_simplepie_parser_parse_behavior/wp-includes/SimplePie/Parser.php(140): xml_parse(Object(XMLParser), '<?xml version="...', true)
-#2 /tmp/simplepie_parser_runner_SdBzWv(146) : eval()'d code(6): SimplePie_Parser->parse('<?xml version="...', 'US-ASCII')
-#3 /tmp/simplepie_parser_runner_SdBzWv(146): eval()
+#2 /tmp/simplepie_parser_runner_i7c5KU(146) : eval()'d code(6): SimplePie_Parser->parse('<?xml version="...', 'US-ASCII')
+#3 /tmp/simplepie_parser_runner_i7c5KU(146): eval()
 #4 {main}
     [output] => 
 )
@@ -2393,8 +2393,8 @@ Array
     [message] => Cannot assign null to property SimplePie_Parser::$data of type array
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/049_simplepie_parser_semantic_fingerprint/wp-includes/SimplePie/Parser.php
     [line] => 275
-    [trace] => #0 /tmp/simplepie_parser_runner_pKwRxl(146) : eval()'d code(4): SimplePie_Parser->tag_open(NULL, 'http://www.w3.o...', Array)
-#1 /tmp/simplepie_parser_runner_pKwRxl(146): eval()
+    [trace] => #0 /tmp/simplepie_parser_runner_kKb4UP(146) : eval()'d code(4): SimplePie_Parser->tag_open(NULL, 'http://www.w3.o...', Array)
+#1 /tmp/simplepie_parser_runner_kKb4UP(146): eval()
 #2 {main}
     [output] => 
 )
@@ -2418,8 +2418,8 @@ Array
     [message] => get_dashboard_blog(): Return value must be of type int, stdClass returned
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/051_ms_deprecated_blog_helpers/wp-includes/ms-deprecated.php
     [line] => 24
-    [trace] => #0 /tmp/ms_deprecated_runner_8Ky3mw(225) : eval()'d code(9): get_dashboard_blog()
-#1 /tmp/ms_deprecated_runner_8Ky3mw(225): eval()
+    [trace] => #0 /tmp/ms_deprecated_runner_XuKYMC(225) : eval()'d code(9): get_dashboard_blog()
+#1 /tmp/ms_deprecated_runner_XuKYMC(225): eval()
 #2 {main}
     [output] => 
 )
@@ -2438,8 +2438,8 @@ Array
     [message] => Typed property WP_MS_Themes_List_Table::$site_id must not be accessed before initialization
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/052_ms_themes_prepare_network/wp-admin/includes/class-wp-ms-themes-list-table.php
     [line] => 99
-    [trace] => #0 /tmp/ms_themes_runner_pvT6pk(303) : eval()'d code(26): WP_MS_Themes_List_Table->prepare_items()
-#1 /tmp/ms_themes_runner_pvT6pk(303): eval()
+    [trace] => #0 /tmp/ms_themes_runner_i7zZt4(303) : eval()'d code(26): WP_MS_Themes_List_Table->prepare_items()
+#1 /tmp/ms_themes_runner_i7zZt4(303): eval()
 #2 {main}
     [output] => 
 )
@@ -2458,8 +2458,8 @@ Array
     [message] => Typed property WP_MS_Themes_List_Table::$site_id must not be accessed before initialization
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/052_ms_themes_semantic_fingerprint/wp-admin/includes/class-wp-ms-themes-list-table.php
     [line] => 99
-    [trace] => #0 /tmp/ms_themes_runner_llTKHw(303) : eval()'d code(48): WP_MS_Themes_List_Table->prepare_items()
-#1 /tmp/ms_themes_runner_llTKHw(303): eval()
+    [trace] => #0 /tmp/ms_themes_runner_Hg3Rp2(303) : eval()'d code(48): WP_MS_Themes_List_Table->prepare_items()
+#1 /tmp/ms_themes_runner_Hg3Rp2(303): eval()
 #2 {main}
     [output] => 
 )
@@ -2728,9 +2728,9 @@ Array
     [ok] => 
     [exception_class] => Error
     [message] => Typed property WP_Scripts::$base_url must not be accessed before initialization
-    [file] => /tmp/scripts_runner_tYG01z(377) : eval()'d code
+    [file] => /tmp/scripts_runner_XFUNSL(377) : eval()'d code
     [line] => 6
-    [trace] => #0 /tmp/scripts_runner_tYG01z(377): eval()
+    [trace] => #0 /tmp/scripts_runner_XFUNSL(377): eval()
 #1 {main}
     [output] => 
 )
@@ -2754,9 +2754,9 @@ Array
     [message] => Typed property WP_Scripts::$content_url must not be accessed before initialization
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/do_item_prints_script_tag/wp-includes/class.wp-scripts.php
     [line] => 141
-    [trace] => #0 /tmp/scripts_runner_n32S9s(369) : eval()'d code(108): WP_Scripts->do_item('alpha', false)
-#1 /tmp/scripts_runner_n32S9s(377) : eval()'d code(9): WP_Dependencies->do_items(Array, false)
-#2 /tmp/scripts_runner_n32S9s(377): eval()
+    [trace] => #0 /tmp/scripts_runner_ZG7NbC(369) : eval()'d code(108): WP_Scripts->do_item('alpha', false)
+#1 /tmp/scripts_runner_ZG7NbC(377) : eval()'d code(9): WP_Dependencies->do_items(Array, false)
+#2 /tmp/scripts_runner_ZG7NbC(377): eval()
 #3 {main}
     [output] => <script type='text/javascript'>
 /* <![CDATA[ */
@@ -2780,10 +2780,10 @@ Array
     [message] => Typed property WP_Scripts::$content_url must not be accessed before initialization
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/footer_group_deferral/wp-includes/class.wp-scripts.php
     [line] => 141
-    [trace] => #0 /tmp/scripts_runner_SvuqFg(369) : eval()'d code(108): WP_Scripts->do_item('footer-script', 1)
+    [trace] => #0 /tmp/scripts_runner_MN2o1z(369) : eval()'d code(108): WP_Scripts->do_item('footer-script', 1)
 #1 /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/footer_group_deferral/wp-includes/class.wp-scripts.php(243): WP_Dependencies->do_items(Array, 1)
-#2 /tmp/scripts_runner_SvuqFg(377) : eval()'d code(21): WP_Scripts->do_footer_items()
-#3 /tmp/scripts_runner_SvuqFg(377): eval()
+#2 /tmp/scripts_runner_MN2o1z(377) : eval()'d code(21): WP_Scripts->do_footer_items()
+#3 /tmp/scripts_runner_MN2o1z(377): eval()
 #4 {main}
     [output] => 
 )
@@ -2805,9 +2805,9 @@ Array
     [ok] => 
     [exception_class] => Error
     [message] => Class "Text_Diff_Engine_string" not found
-    [file] => /tmp/diff_string_runner_PH0Q4R(146) : eval()'d code
+    [file] => /tmp/diff_string_runner_r8uiW2(146) : eval()'d code
     [line] => 1
-    [trace] => #0 /tmp/diff_string_runner_PH0Q4R(146): eval()
+    [trace] => #0 /tmp/diff_string_runner_r8uiW2(146): eval()
 #1 {main}
     [output] => 
 )
@@ -2824,9 +2824,9 @@ Array
     [ok] => 
     [exception_class] => Error
     [message] => Class "Text_Diff_Engine_string" not found
-    [file] => /tmp/diff_string_runner_KbmDEc(146) : eval()'d code
+    [file] => /tmp/diff_string_runner_GL7Usk(146) : eval()'d code
     [line] => 1
-    [trace] => #0 /tmp/diff_string_runner_KbmDEc(146): eval()
+    [trace] => #0 /tmp/diff_string_runner_GL7Usk(146): eval()
 #1 {main}
     [output] => 
 )
@@ -2843,9 +2843,9 @@ Array
     [ok] => 
     [exception_class] => Error
     [message] => Class "Text_Diff_Engine_string" not found
-    [file] => /tmp/diff_string_runner_b5WTik(146) : eval()'d code
+    [file] => /tmp/diff_string_runner_8CEs4Z(146) : eval()'d code
     [line] => 1
-    [trace] => #0 /tmp/diff_string_runner_b5WTik(146): eval()
+    [trace] => #0 /tmp/diff_string_runner_8CEs4Z(146): eval()
 #1 {main}
     [output] => 
 )
@@ -2862,9 +2862,9 @@ Array
     [ok] => 
     [exception_class] => Error
     [message] => Class "Text_Diff_Engine_string" not found
-    [file] => /tmp/diff_string_runner_SGigDT(146) : eval()'d code
+    [file] => /tmp/diff_string_runner_1FVW8b(146) : eval()'d code
     [line] => 1
-    [trace] => #0 /tmp/diff_string_runner_SGigDT(146): eval()
+    [trace] => #0 /tmp/diff_string_runner_1FVW8b(146): eval()
 #1 {main}
     [output] => 
 )
@@ -2883,7 +2883,7 @@ Array
     [message] => Class "GetID3\GetID3Handler" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/runtime_lookup_tables/wp-includes/ID3/module.audio.dts.php
     [line] => 10
-    [trace] => #0 /tmp/dts_runner_mA7LHb(132): require_once()
+    [trace] => #0 /tmp/dts_runner_J5sOYb(132): require_once()
 #1 {main}
     [output] => 
 )
@@ -2902,7 +2902,7 @@ Array
     [message] => Class "GetID3\GetID3Handler" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/channel_dialog_invalid_inputs/wp-includes/ID3/module.audio.dts.php
     [line] => 10
-    [trace] => #0 /tmp/dts_runner_pRm2JR(132): require_once()
+    [trace] => #0 /tmp/dts_runner_bipPKq(132): require_once()
 #1 {main}
     [output] => 
 )
@@ -2921,7 +2921,7 @@ Array
     [message] => Class "GetID3\GetID3Handler" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/analyze_raw_big_endian_header/wp-includes/ID3/module.audio.dts.php
     [line] => 10
-    [trace] => #0 /tmp/dts_runner_o2cXfY(132): require_once()
+    [trace] => #0 /tmp/dts_runner_tTP0tJ(132): require_once()
 #1 {main}
     [output] => 
 )
@@ -2940,7 +2940,7 @@ Array
     [message] => Class "GetID3\GetID3Handler" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/analyze_invalid_syncword/wp-includes/ID3/module.audio.dts.php
     [line] => 10
-    [trace] => #0 /tmp/dts_runner_GjZyjY(132): require_once()
+    [trace] => #0 /tmp/dts_runner_2p4wUb(132): require_once()
 #1 {main}
     [output] => 
 )
@@ -2959,7 +2959,7 @@ Array
     [message] => Class "GetID3\GetID3Handler" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/analyze_matroska_dependency_without_syncword/wp-includes/ID3/module.audio.dts.php
     [line] => 10
-    [trace] => #0 /tmp/dts_runner_0nLZWd(132): require_once()
+    [trace] => #0 /tmp/dts_runner_j8Et5m(132): require_once()
 #1 {main}
     [output] => 
 )
@@ -3198,8 +3198,8 @@ Array
     [message] => edit_user(): Return value must be of type int, WP_Error returned
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/edit_user_validation_errors/wp-admin/includes/user.php
     [line] => 194
-    [trace] => #0 /tmp/user_admin_runner_4Js4Ef(394) : eval()'d code(8): edit_user(0)
-#1 /tmp/user_admin_runner_4Js4Ef(394): eval()
+    [trace] => #0 /tmp/user_admin_runner_hdzfFk(394) : eval()'d code(8): edit_user(0)
+#1 /tmp/user_admin_runner_hdzfFk(394): eval()
 #2 {main}
     [output] => 
 )
@@ -3297,17 +3297,17 @@ Failed asserting that 255 is identical to 0.
 188) WpImageEditorGdRuntimeBehaviorTest::test_runtime_loads_class_and_reports_gd_capability
 WP_Image_Editor_GD subprocess failed.
 STDERR:
-PHP Warning:  "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_RzGRLj(481) : eval()'d code on line 27
-PHP Fatal error:  A void function must not return a value in /tmp/gd_editor_runner_RzGRLj(481) : eval()'d code on line 57
+PHP Warning:  "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_vi6mPP(481) : eval()'d code on line 27
+PHP Fatal error:  A void function must not return a value in /tmp/gd_editor_runner_vi6mPP(481) : eval()'d code on line 57
 SHUTDOWN_FATAL: A void function must not return a value
-FILE: /tmp/gd_editor_runner_RzGRLj(481) : eval()'d code
+FILE: /tmp/gd_editor_runner_vi6mPP(481) : eval()'d code
 LINE: 57
 
 STDOUT:
 
-Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_RzGRLj(481) : eval()'d code on line 27
+Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_vi6mPP(481) : eval()'d code on line 27
 
-Fatal error: A void function must not return a value in /tmp/gd_editor_runner_RzGRLj(481) : eval()'d code on line 57
+Fatal error: A void function must not return a value in /tmp/gd_editor_runner_vi6mPP(481) : eval()'d code on line 57
 
 Failed asserting that 255 is identical to 0.
 
@@ -3317,17 +3317,17 @@ Failed asserting that 255 is identical to 0.
 189) WpImageEditorGdRuntimeBehaviorTest::test_php8_loads_valid_png_instead_of_treating_gdimage_as_invalid_image
 WP_Image_Editor_GD subprocess failed.
 STDERR:
-PHP Warning:  "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_RsD1Ve(481) : eval()'d code on line 27
-PHP Fatal error:  A void function must not return a value in /tmp/gd_editor_runner_RsD1Ve(481) : eval()'d code on line 57
+PHP Warning:  "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_bPaXMW(481) : eval()'d code on line 27
+PHP Fatal error:  A void function must not return a value in /tmp/gd_editor_runner_bPaXMW(481) : eval()'d code on line 57
 SHUTDOWN_FATAL: A void function must not return a value
-FILE: /tmp/gd_editor_runner_RsD1Ve(481) : eval()'d code
+FILE: /tmp/gd_editor_runner_bPaXMW(481) : eval()'d code
 LINE: 57
 
 STDOUT:
 
-Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_RsD1Ve(481) : eval()'d code on line 27
+Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_bPaXMW(481) : eval()'d code on line 27
 
-Fatal error: A void function must not return a value in /tmp/gd_editor_runner_RsD1Ve(481) : eval()'d code on line 57
+Fatal error: A void function must not return a value in /tmp/gd_editor_runner_bPaXMW(481) : eval()'d code on line 57
 
 Failed asserting that 255 is identical to 0.
 
@@ -3337,17 +3337,17 @@ Failed asserting that 255 is identical to 0.
 190) WpImageEditorGdRuntimeBehaviorTest::test_php8_resize_accepts_gdimage_from_imagecreatetruecolor
 WP_Image_Editor_GD subprocess failed.
 STDERR:
-PHP Warning:  "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_yDz3HH(481) : eval()'d code on line 27
-PHP Fatal error:  A void function must not return a value in /tmp/gd_editor_runner_yDz3HH(481) : eval()'d code on line 57
+PHP Warning:  "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_Jm7PkP(481) : eval()'d code on line 27
+PHP Fatal error:  A void function must not return a value in /tmp/gd_editor_runner_Jm7PkP(481) : eval()'d code on line 57
 SHUTDOWN_FATAL: A void function must not return a value
-FILE: /tmp/gd_editor_runner_yDz3HH(481) : eval()'d code
+FILE: /tmp/gd_editor_runner_Jm7PkP(481) : eval()'d code
 LINE: 57
 
 STDOUT:
 
-Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_yDz3HH(481) : eval()'d code on line 27
+Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_Jm7PkP(481) : eval()'d code on line 27
 
-Fatal error: A void function must not return a value in /tmp/gd_editor_runner_yDz3HH(481) : eval()'d code on line 57
+Fatal error: A void function must not return a value in /tmp/gd_editor_runner_Jm7PkP(481) : eval()'d code on line 57
 
 Failed asserting that 255 is identical to 0.
 
@@ -3357,17 +3357,17 @@ Failed asserting that 255 is identical to 0.
 191) WpImageEditorGdRuntimeBehaviorTest::test_php8_crop_accepts_gdimage_destination
 WP_Image_Editor_GD subprocess failed.
 STDERR:
-PHP Warning:  "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_2UuASA(481) : eval()'d code on line 27
-PHP Fatal error:  A void function must not return a value in /tmp/gd_editor_runner_2UuASA(481) : eval()'d code on line 57
+PHP Warning:  "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_orEOQk(481) : eval()'d code on line 27
+PHP Fatal error:  A void function must not return a value in /tmp/gd_editor_runner_orEOQk(481) : eval()'d code on line 57
 SHUTDOWN_FATAL: A void function must not return a value
-FILE: /tmp/gd_editor_runner_2UuASA(481) : eval()'d code
+FILE: /tmp/gd_editor_runner_orEOQk(481) : eval()'d code
 LINE: 57
 
 STDOUT:
 
-Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_2UuASA(481) : eval()'d code on line 27
+Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_orEOQk(481) : eval()'d code on line 27
 
-Fatal error: A void function must not return a value in /tmp/gd_editor_runner_2UuASA(481) : eval()'d code on line 57
+Fatal error: A void function must not return a value in /tmp/gd_editor_runner_orEOQk(481) : eval()'d code on line 57
 
 Failed asserting that 255 is identical to 0.
 
@@ -3377,17 +3377,17 @@ Failed asserting that 255 is identical to 0.
 192) WpImageEditorGdRuntimeBehaviorTest::test_php8_rotate_and_flip_accept_gdimage_results
 WP_Image_Editor_GD subprocess failed.
 STDERR:
-PHP Warning:  "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_lM5507(481) : eval()'d code on line 27
-PHP Fatal error:  A void function must not return a value in /tmp/gd_editor_runner_lM5507(481) : eval()'d code on line 57
+PHP Warning:  "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_WQXvVv(481) : eval()'d code on line 27
+PHP Fatal error:  A void function must not return a value in /tmp/gd_editor_runner_WQXvVv(481) : eval()'d code on line 57
 SHUTDOWN_FATAL: A void function must not return a value
-FILE: /tmp/gd_editor_runner_lM5507(481) : eval()'d code
+FILE: /tmp/gd_editor_runner_WQXvVv(481) : eval()'d code
 LINE: 57
 
 STDOUT:
 
-Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_lM5507(481) : eval()'d code on line 27
+Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /tmp/gd_editor_runner_WQXvVv(481) : eval()'d code on line 27
 
-Fatal error: A void function must not return a value in /tmp/gd_editor_runner_lM5507(481) : eval()'d code on line 57
+Fatal error: A void function must not return a value in /tmp/gd_editor_runner_WQXvVv(481) : eval()'d code on line 57
 
 Failed asserting that 255 is identical to 0.
 
@@ -3401,9 +3401,9 @@ Array
     [ok] => 
     [exception_class] => Error
     [message] => Cannot access private property SimplePie_File::$url
-    [file] => /tmp/simplepie_file_runner_XuSFUQ(116) : eval()'d code
+    [file] => /tmp/simplepie_file_runner_2fRAYT(116) : eval()'d code
     [line] => 7
-    [trace] => #0 /tmp/simplepie_file_runner_XuSFUQ(116): eval()
+    [trace] => #0 /tmp/simplepie_file_runner_2fRAYT(116): eval()
 #1 {main}
     [output] => 
 )
@@ -3420,9 +3420,9 @@ Array
     [ok] => 
     [exception_class] => Error
     [message] => Cannot access private property SimplePie_File::$success
-    [file] => /tmp/simplepie_file_runner_QztAne(116) : eval()'d code
+    [file] => /tmp/simplepie_file_runner_MvWKHz(116) : eval()'d code
     [line] => 6
-    [trace] => #0 /tmp/simplepie_file_runner_QztAne(116): eval()
+    [trace] => #0 /tmp/simplepie_file_runner_MvWKHz(116): eval()
 #1 {main}
     [output] => 
 )
@@ -3439,9 +3439,9 @@ Array
     [ok] => 
     [exception_class] => Error
     [message] => Cannot access private property SimplePie_File::$success
-    [file] => /tmp/simplepie_file_runner_X0IXCG(116) : eval()'d code
+    [file] => /tmp/simplepie_file_runner_wzF7Eo(116) : eval()'d code
     [line] => 7
-    [trace] => #0 /tmp/simplepie_file_runner_X0IXCG(116): eval()
+    [trace] => #0 /tmp/simplepie_file_runner_wzF7Eo(116): eval()
 #1 {main}
     [output] => 
 )
@@ -3463,9 +3463,9 @@ Array
     [ok] => 
     [exception_class] => Error
     [message] => Typed property WP_Users_List_Table::$site_id must not be accessed before initialization
-    [file] => /tmp/users_list_runner_zGw0cB(366) : eval()'d code
+    [file] => /tmp/users_list_runner_K5J67H(366) : eval()'d code
     [line] => 16
-    [trace] => #0 /tmp/users_list_runner_zGw0cB(366): eval()
+    [trace] => #0 /tmp/users_list_runner_K5J67H(366): eval()
 #1 {main}
     [output] => 
 )
@@ -3812,10 +3812,10 @@ Array
 
     [exception_class] => Exception
     [message] => wp_die: Invalid site ID.
-    [file] => /tmp/network_site_info_runner_9zErSY
+    [file] => /tmp/network_site_info_runner_aL7KG3
     [line] => 193
     [trace] => #0 /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/runtime_render_form/wp-admin/network/site-info.php(41): wp_die('Invalid site ID...')
-#1 /tmp/network_site_info_runner_9zErSY(519): require('/work/runs/repl...')
+#1 /tmp/network_site_info_runner_aL7KG3(519): require('/work/runs/repl...')
 #2 {main}
 )
 
@@ -3875,10 +3875,10 @@ Array
 
     [exception_class] => Exception
     [message] => wp_die: Invalid site ID.
-    [file] => /tmp/network_site_info_runner_6JAYE1
+    [file] => /tmp/network_site_info_runner_ZTbLzm
     [line] => 193
     [trace] => #0 /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/update_message/wp-admin/network/site-info.php(41): wp_die('Invalid site ID...')
-#1 /tmp/network_site_info_runner_6JAYE1(519): require('/work/runs/repl...')
+#1 /tmp/network_site_info_runner_ZTbLzm(519): require('/work/runs/repl...')
 #2 {main}
 )
 
@@ -3938,10 +3938,10 @@ Array
 
     [exception_class] => Exception
     [message] => wp_die: Invalid site ID.
-    [file] => /tmp/network_site_info_runner_6QHlCO
+    [file] => /tmp/network_site_info_runner_XkLBmp
     [line] => 193
     [trace] => #0 /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/main_site_render/wp-admin/network/site-info.php(41): wp_die('Invalid site ID...')
-#1 /tmp/network_site_info_runner_6QHlCO(519): require('/work/runs/repl...')
+#1 /tmp/network_site_info_runner_XkLBmp(519): require('/work/runs/repl...')
 #2 {main}
 )
 
@@ -4001,10 +4001,10 @@ Array
 
     [exception_class] => Exception
     [message] => wp_die: Invalid site ID.
-    [file] => /tmp/network_site_info_runner_nePfNC
+    [file] => /tmp/network_site_info_runner_gSGyon
     [line] => 193
     [trace] => #0 /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/update_site_action/wp-admin/network/site-info.php(41): wp_die('Invalid site ID...')
-#1 /tmp/network_site_info_runner_nePfNC(519): require('/work/runs/repl...')
+#1 /tmp/network_site_info_runner_gSGyon(519): require('/work/runs/repl...')
 #2 {main}
 )
 
@@ -4069,10 +4069,10 @@ Array
 
     [exception_class] => Exception
     [message] => wp_die: Invalid site ID.
-    [file] => /tmp/network_site_info_runner_jgZS9s
+    [file] => /tmp/network_site_info_runner_N7Z1k7
     [line] => 193
     [trace] => #0 /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/semantic_fingerprint_rendered_page/wp-admin/network/site-info.php(41): wp_die('Invalid site ID...')
-#1 /tmp/network_site_info_runner_jgZS9s(519): require('/work/runs/repl...')
+#1 /tmp/network_site_info_runner_N7Z1k7(519): require('/work/runs/repl...')
 #2 {main}
 )
 
@@ -5202,7 +5202,7 @@ Array
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/browser_chromeframe_allowed/wp-includes/vars.php
     [line] => 36
     [trace] => #0 /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/browser_chromeframe_allowed/wp-includes/vars.php(36): trim(NULL, '/')
-#1 /tmp/wp_vars_runner_6xqZwH(78): require('/work/runs/repl...')
+#1 /tmp/wp_vars_runner_6ox1B5(78): require('/work/runs/repl...')
 #2 {main}
     [output] => 
 Warning: Undefined array key 1 in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/browser_chromeframe_allowed/wp-includes/vars.php on line 35
@@ -5232,7 +5232,7 @@ Array
     [message] => Class "FtpBase" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/runtime_load_ftp_pure/wp-admin/includes/class-ftp-pure.php
     [line] => 28
-    [trace] => #0 /tmp/pemftp_pure_runner_ibrET4(225): require_once()
+    [trace] => #0 /tmp/pemftp_pure_runner_n8yXy9(225): require_once()
 #1 {main}
     [output] => 
 Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/runtime_load_ftp_pure/wp-admin/includes/class-ftp-pure.php on line 49
@@ -5253,7 +5253,7 @@ Array
     [message] => Class "FtpBase" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/behavior_readmsg/wp-admin/includes/class-ftp-pure.php
     [line] => 28
-    [trace] => #0 /tmp/pemftp_pure_runner_e8hN41(225): require_once()
+    [trace] => #0 /tmp/pemftp_pure_runner_wZ5X16(225): require_once()
 #1 {main}
     [output] => 
 Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/behavior_readmsg/wp-admin/includes/class-ftp-pure.php on line 49
@@ -5274,7 +5274,7 @@ Array
     [message] => Class "FtpBase" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/behavior_data_read/wp-admin/includes/class-ftp-pure.php
     [line] => 28
-    [trace] => #0 /tmp/pemftp_pure_runner_nHLvZn(225): require_once()
+    [trace] => #0 /tmp/pemftp_pure_runner_ITbs7Y(225): require_once()
 #1 {main}
     [output] => 
 Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/behavior_data_read/wp-admin/includes/class-ftp-pure.php on line 49
@@ -5295,7 +5295,7 @@ Array
     [message] => Class "FtpBase" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/behavior_data_write/wp-admin/includes/class-ftp-pure.php
     [line] => 28
-    [trace] => #0 /tmp/pemftp_pure_runner_d6ajaK(225): require_once()
+    [trace] => #0 /tmp/pemftp_pure_runner_R84rqd(225): require_once()
 #1 {main}
     [output] => 
 Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/behavior_data_write/wp-admin/includes/class-ftp-pure.php on line 49
@@ -5316,7 +5316,7 @@ Array
     [message] => Class "FtpBase" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/behavior_prepare_close_timeout/wp-admin/includes/class-ftp-pure.php
     [line] => 28
-    [trace] => #0 /tmp/pemftp_pure_runner_iiSA6u(225): require_once()
+    [trace] => #0 /tmp/pemftp_pure_runner_YC0P8T(225): require_once()
 #1 {main}
     [output] => 
 Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/behavior_prepare_close_timeout/wp-admin/includes/class-ftp-pure.php on line 49
@@ -5337,7 +5337,7 @@ Array
     [message] => Class "FtpBase" not found
     [file] => /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/semantic_fingerprint_pemftp_pure/wp-admin/includes/class-ftp-pure.php
     [line] => 28
-    [trace] => #0 /tmp/pemftp_pure_runner_MMJp27(225): require_once()
+    [trace] => #0 /tmp/pemftp_pure_runner_FvMdgT(225): require_once()
 #1 {main}
     [output] => 
 Warning: "resource" is not a supported builtin type and will be interpreted as a class name. Write "\resource" to suppress this warning in /work/runs/replay_meta_llama_llama_3_3_70b_instruct/score/harness/build/sandboxes/opus_5_5/semantic_fingerprint_pemftp_pure/wp-admin/includes/class-ftp-pure.php on line 49
@@ -5396,7 +5396,7 @@ Failed asserting that '<?xml version="1.0"?>\n
 <opml version="1.0">\r\n
     <head>\r\n
         <title>Links for Example Links Blog28</title>\r\n
-        <dateCreated>Mon, 02 Nov 2026 23:52:25 GMT</dateCreated>\r\n
+        <dateCreated>Tue, 03 Nov 2026 00:06:04 GMT</dateCreated>\r\n
             </head>\r\n
     <body>\r\n
                 <outline type="category" title="Tech &amp; Tools">\r\n
@@ -5416,7 +5416,7 @@ Failed asserting that '<?xml version="1.0"?>\n
 <opml version="1.0">\r\n
     <head>\r\n
         <title>Links for A&amp;B &quot;Links&quot;35</title>\r\n
-        <dateCreated>Mon, 02 Nov 2026 23:52:27 GMT</dateCreated>\r\n
+        <dateCreated>Tue, 03 Nov 2026 00:06:06 GMT</dateCreated>\r\n
         <ownerName>Unit Test</ownerName>    </head>\r\n
     <body>\r\n
                 <outline type="category" title="Filtered Category: Music &amp; Media">\r\n

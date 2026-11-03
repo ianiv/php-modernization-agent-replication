@@ -14,8 +14,8 @@
   "preservation_rate": 59.5,
   "repair_rate": 21.2,
   "rector_findings": 511,
-  "rector_resolved": 167,
-  "rector_resolution_rate": 32.7,
+  "rector_resolved": 156,
+  "rector_resolution_rate": 30.5,
   "rector_introduced": 18,
   "files_fully_done": 0
 }

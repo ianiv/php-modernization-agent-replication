@@ -72,7 +72,6 @@ It notes that ``newer models may avoid specific errors, but the evaluation desig
 And it recommends treating the first answer as a draft: a staged workflow of lint, load with dependencies, then check behavior, after which ``execution feedback could then drive repair'' (\S V).
 A headline such as ``every evaluated LLM left fewer working files than it started with'' is nonetheless easy to repeat without these qualifications, as evidence that LLMs cannot migrate legacy code.
 Within days of posting, one article headlined the study ``AI Legacy Code Modernization Breaks More Working Code Than It Fixes''~\cite{cava2026generativelabs}, although its body does note that each model got ``one file, one prompt and no chance to run its own output.''
-An automated research digest summarized it, without the qualifier, as an empirical study of ``the real failure rate'' of LLM rewriting of legacy code (our translation)~\cite{bigmodelradar2026}.
 This paper tests that popular reading, not the authors' claim.
 
 The popular reading depends on the two things the study deliberately sets aside.
@@ -693,8 +692,9 @@ We consider both part of how the model is used today, but they make the single-s
 
 \paragraph{Environment (internal).}
 We used PHP 8.3.36 rather than 8.3.22, and Linux on Apple's Virtualization.framework rather than Windows.
-The originals and the archived Sonnet 4 outputs reproduce check for check, so neither difference affected those scores.
-We cannot rule out effects on the new outputs.
+The originals and the archived Sonnet 4 outputs reproduce check for check, and Rector's outputs reproduce its published totals.
+For three of the other earlier models the re-score shifts a few checks (at most three per model), plausibly from the PHP patch-level difference, but no compatible-file count changes.
+We cannot rule out similar small effects on the new outputs.
 
 \paragraph{Metrics (construct).}
 Hidden checks are a sample of each file's contract.
