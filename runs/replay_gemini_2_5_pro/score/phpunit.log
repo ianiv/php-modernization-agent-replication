@@ -1,0 +1,3247 @@
+PHPUnit 9.6.34 by Sebastian Bergmann and contributors.
+
+...........FFFFFFFFFFFFFFF.........FFFFFFFFF..F....FFFFFFFFFFFF  63 / 631 (  9%)
+F......................FFFFFFFFFFFFFF.......................FFF 126 / 631 ( 19%)
+FFFFF..........FFFFFFFFFF................FFFF.......F.......... 189 / 631 ( 29%)
+..EFFFFFFF..........F.FF.FF........FFFF.......F....F........... 252 / 631 ( 39%)
+......F.....F......F.F.F.....FF..FF.FFFFFFFF.F...FFFFF.......FF 315 / 631 ( 49%)
+FFFFFFFFFFF.........................F....F...FFFFFFFFFFFF.....F 378 / 631 ( 59%)
+F....F........FF..............................................F 441 / 631 ( 69%)
+...F........................................................... 504 / 631 ( 79%)
+.......FFFFFFFFF.........FFFF...FFFFFFFF.......FFFFFFF......... 567 / 631 ( 89%)
+..........................................F..F.............F... 630 / 631 ( 99%)
+.                                                               631 / 631 (100%)
+
+Time: 05:01.926, Memory: 20.00 MB
+
+There was 1 error:
+
+1) PluginsListTableRuntimeBehaviorTest::test_behavior_prepare_items_classifies_plugins_and_updates_totals
+Undefined array key "all"
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/031_PluginsListTableRuntimeBehaviorTest.php:154
+
+--
+
+There were 181 failures:
+
+1) WpDbRuntimeBehaviorTest::test_runtime_loads_wpdb_class_and_core_constants
+wpdb subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Method wpdb::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wpdb-runtime-load/wp-includes/wp-db.php on line 490
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/003_WpDbRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/003_WpDbRuntimeBehaviorTest.php:64
+
+2) WpDbRuntimeBehaviorTest::test_behavior_prepare_and_esc_like_match_expected_contract
+wpdb subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Method wpdb::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wpdb-prepare-esc-like/wp-includes/wp-db.php on line 490
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/003_WpDbRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/003_WpDbRuntimeBehaviorTest.php:115
+
+3) WpDbRuntimeBehaviorTest::test_behavior_prefix_tables_and_blog_prefix_match_expected_contract
+wpdb subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Method wpdb::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wpdb-prefix-tables/wp-includes/wp-db.php on line 490
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/003_WpDbRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/003_WpDbRuntimeBehaviorTest.php:170
+
+4) WpDbRuntimeBehaviorTest::test_behavior_insert_update_delete_build_expected_prepared_queries
+wpdb subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Method wpdb::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wpdb-insert-update-delete/wp-includes/wp-db.php on line 490
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/003_WpDbRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/003_WpDbRuntimeBehaviorTest.php:235
+
+5) WpDbRuntimeBehaviorTest::test_behavior_cached_result_accessors_and_flush_match_expected_contract
+wpdb subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Method wpdb::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wpdb-cache-accessors-flush/wp-includes/wp-db.php on line 490
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/003_WpDbRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/003_WpDbRuntimeBehaviorTest.php:293
+
+6) WpDbRuntimeBehaviorTest::test_behavior_error_visibility_toggles_match_expected_contract
+wpdb subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Method wpdb::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wpdb-error-toggles/wp-includes/wp-db.php on line 490
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/003_WpDbRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/003_WpDbRuntimeBehaviorTest.php:342
+
+7) WpDbRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_wpdb_scenarios
+wpdb subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Method wpdb::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wpdb-semantic-fingerprint/wp-includes/wp-db.php on line 490
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/003_WpDbRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/003_WpDbRuntimeBehaviorTest.php:429
+
+8) IxrRuntimeBehaviorTest::test_runtime_loads_ixr_classes
+IXR subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Declaration of IXR_ClientMulticall::query(): mixed must be compatible with IXR_Client::query(string $method, mixed ...$args): bool in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/ixr-runtime-load/wp-includes/IXR/class-IXR.php on line 1035
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:53
+
+9) IxrRuntimeBehaviorTest::test_behavior_ixr_value_encodes_scalar_array_and_struct_values
+IXR subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Declaration of IXR_ClientMulticall::query(): mixed must be compatible with IXR_Client::query(string $method, mixed ...$args): bool in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/ixr-value-encoding/wp-includes/IXR/class-IXR.php on line 1035
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:99
+
+10) IxrRuntimeBehaviorTest::test_behavior_ixr_date_base64_error_and_request_xml
+IXR subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Declaration of IXR_ClientMulticall::query(): mixed must be compatible with IXR_Client::query(string $method, mixed ...$args): bool in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/ixr-date-base64-error-request/wp-includes/IXR/class-IXR.php on line 1035
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:155
+
+11) IxrRuntimeBehaviorTest::test_behavior_ixr_message_parses_method_call_with_params
+IXR subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Declaration of IXR_ClientMulticall::query(): mixed must be compatible with IXR_Client::query(string $method, mixed ...$args): bool in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/ixr-message-parse-method-call/wp-includes/IXR/class-IXR.php on line 1035
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:225
+
+12) IxrRuntimeBehaviorTest::test_behavior_ixr_message_rejects_invalid_xml_and_invalid_root
+IXR subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Declaration of IXR_ClientMulticall::query(): mixed must be compatible with IXR_Client::query(string $method, mixed ...$args): bool in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/ixr-message-invalid-input/wp-includes/IXR/class-IXR.php on line 1035
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:259
+
+13) IxrRuntimeBehaviorTest::test_behavior_ixr_server_callbacks_and_multicall_without_network
+IXR subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Declaration of IXR_ClientMulticall::query(): mixed must be compatible with IXR_Client::query(string $method, mixed ...$args): bool in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/ixr-server-callbacks/wp-includes/IXR/class-IXR.php on line 1035
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:319
+
+14) IxrRuntimeBehaviorTest::test_behavior_ixr_client_url_parsing_and_error_accessors
+IXR subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Declaration of IXR_ClientMulticall::query(): mixed must be compatible with IXR_Client::query(string $method, mixed ...$args): bool in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/ixr-client-url-parsing/wp-includes/IXR/class-IXR.php on line 1035
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:363
+
+15) IxrRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_ixr_scenarios
+IXR subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Declaration of IXR_ClientMulticall::query(): mixed must be compatible with IXR_Client::query(string $method, mixed ...$args): bool in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/ixr-semantic-fingerprint/wp-includes/IXR/class-IXR.php on line 1035
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/004_IxrRuntimeBehaviorTest.php:439
+
+16) WidgetsRuntimeBehaviorTest::test_widget_registration_control_description_and_unregister
+widgets.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => wp_register_sidebar_widget(): Argument #3 ($output_callback) must be of type callable, string given, called in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/widgets-standalone-widget-registration/wp-includes/widgets.php on line 834
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/widgets-standalone-widget-registration/wp-includes/widgets.php
+    [line] => 720
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/widgets-standalone-widget-registration/wp-includes/widgets.php(834): wp_register_sidebar_widget('demo_widget-2', '', '')
+#1 /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/widgets-standalone-widget-registration/.standalone-widgets-runner.php(203) : eval()'d code(51): wp_unregister_sidebar_widget('demo_widget-2')
+#2 /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/widgets-standalone-widget-registration/.standalone-widgets-runner.php(203): eval()
+#3 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/006_WidgetsRuntimeBehaviorTest.php:309
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/006_WidgetsRuntimeBehaviorTest.php:534
+
+17) WidgetsRuntimeBehaviorTest::test_dynamic_sidebar_active_detection_and_semantic_fingerprint
+widgets.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => is_active_widget(): Argument #2 ($widget_id) must be of type int|false, string given, called in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/widgets-standalone-dynamic-sidebar/.standalone-widgets-runner.php(203) : eval()'d code on line 38
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/widgets-standalone-dynamic-sidebar/wp-includes/widgets.php
+    [line] => 1162
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/widgets-standalone-dynamic-sidebar/.standalone-widgets-runner.php(203) : eval()'d code(38): is_active_widget('standalone_dyna...', 'dynamic_widget-...', false, true)
+#1 /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/widgets-standalone-dynamic-sidebar/.standalone-widgets-runner.php(203): eval()
+#2 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/006_WidgetsRuntimeBehaviorTest.php:309
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/006_WidgetsRuntimeBehaviorTest.php:621
+
+18) ClassWpRuntimeBehaviorTest::test_runtime_loads_wp_and_matches_map_classes
+class-wp.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_MatchesMapRegex::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/class-wp-runtime-load/wp-includes/class-wp.php on line 723
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/007_ClassWpRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/007_ClassWpRuntimeBehaviorTest.php:62
+
+19) ClassWpRuntimeBehaviorTest::test_behavior_matches_map_regex_substitutes_rewrite_matches
+class-wp.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_MatchesMapRegex::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/class-wp-matches-map-regex/wp-includes/class-wp.php on line 723
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/007_ClassWpRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/007_ClassWpRuntimeBehaviorTest.php:96
+
+20) ClassWpRuntimeBehaviorTest::test_behavior_query_var_helpers_and_build_query_string
+class-wp.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_MatchesMapRegex::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/class-wp-query-var-build-string/wp-includes/class-wp.php on line 723
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/007_ClassWpRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/007_ClassWpRuntimeBehaviorTest.php:140
+
+21) ClassWpRuntimeBehaviorTest::test_behavior_parse_request_without_rewrites_uses_extra_get_post_and_private_vars
+class-wp.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_MatchesMapRegex::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/class-wp-parse-no-rewrite/wp-includes/class-wp.php on line 723
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/007_ClassWpRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/007_ClassWpRuntimeBehaviorTest.php:216
+
+22) ClassWpRuntimeBehaviorTest::test_behavior_parse_request_with_rewrite_rule_sets_matched_rule_and_query_vars
+class-wp.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_MatchesMapRegex::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/class-wp-parse-rewrite/wp-includes/class-wp.php on line 723
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/007_ClassWpRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/007_ClassWpRuntimeBehaviorTest.php:286
+
+23) ClassWpRuntimeBehaviorTest::test_behavior_query_posts_register_globals_and_handle_404
+class-wp.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_MatchesMapRegex::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/class-wp-query-globals-404/wp-includes/class-wp.php on line 723
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/007_ClassWpRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/007_ClassWpRuntimeBehaviorTest.php:419
+
+24) ClassWpRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_class_wp_scenarios
+class-wp.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_MatchesMapRegex::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/class-wp-semantic-fingerprint/wp-includes/class-wp.php on line 723
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/007_ClassWpRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/007_ClassWpRuntimeBehaviorTest.php:507
+
+25) WpLoginRuntimeBehaviorTest::test_behavior_loggedout_message_is_rendered_as_message_not_error
+Failed asserting that '<!DOCTYPE html>\r\n
+	<!--[if IE 8]>\r\n
+		<html xmlns="http://www.w3.org/1999/xhtml" class="ie8" lang="en-US">\r\n
+	<![endif]-->\r\n
+	<!--[if !(IE 8) ]><!-->\r\n
+		<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">\r\n
+	<!--<![endif]-->\r\n
+	<head>\r\n
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />\r\n
+	<title>Test Blog &rsaquo; Log In</title>\r\n
+	<link rel="stylesheet" href="login.css" />	</head>\r\n
+	<body class="login login-action-login wp-core-ui locale-en-us">\r\n
+	<div id="login">\r\n
+		<h1><a href="https://wordpress.org/" title="Powered by WordPress" tabindex="-1">Test Blog</a></h1>\r\n
+	\r\n
+<form name="loginform" id="loginform" action="http://example.test/wp-login.php" method="post">\r\n
+	<p>\r\n
+		<label for="user_login">Username<br />\r\n
+		<input type="text" name="log" id="user_login" class="input" value="" size="20" /></label>\r\n
+	</p>\r\n
+	<p>\r\n
+		<label for="user_pass">Password<br />\r\n
+		<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" /></label>\r\n
+	</p>\r\n
+		<p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"  /> Remember Me</label></p>\r\n
+	<p class="submit">\r\n
+		<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Log In" />\r\n
+		<input type="hidden" name="redirect_to" value="http://example.test/wp-admin/" />\r\n
+		<input type="hidden" name="testcookie" value="1" />\r\n
+	</p>\r\n
+</form>\r\n
+\r\n
+<p id="nav">\r\n
+<a href="http://example.test/wp-login.php?action=register">Register</a> | 	<a href="http://example.test/wp-login.php?action=lostpassword" title="Password Lost and Found">Lost your password?</a>\r\n
+</p>\r\n
+\r\n
+<script type="text/javascript">\r\n
+function wp_attempt_focus(){\r\n
+setTimeout( function(){ try{\r\n
+d = document.getElementById('user_login');\r\n
+d.focus();\r\n
+d.select();\r\n
+} catch(e){}\r\n
+}, 200);\r\n
+}\r\n
+\r\n
+wp_attempt_focus();\r\n
+if(typeof wpOnload=='function')wpOnload();\r\n
+</script>\r\n
+\r\n
+	<p id="backtoblog"><a href="http://example.test/" title="Are you lost?">&larr; Back to Test Blog</a></p>\r\n
+	\r\n
+	</div>\r\n
+\r\n
+	\r\n
+		<div class="clear"></div>\r\n
+	</body>\r\n
+	</html>\r\n
+	' contains "<p class="message">".
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/008_WpLoginRuntimeBehaviorTest.php:94
+
+26) GetId3CoreRuntimeBehaviorTest::test_runtime_loads_getid3_core_classes_and_default_options
+getID3 core execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => ParseError
+    [message] => syntax error, unexpected token "??=", expecting "," or ";"
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/getid3-core-runtime-load/wp-includes/ID3/getid3.php
+    [line] => 1111
+    [trace] => #0 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:134
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:172
+
+27) GetId3CoreRuntimeBehaviorTest::test_behavior_set_option_and_openfile_contract
+getID3 core execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => ParseError
+    [message] => syntax error, unexpected token "??=", expecting "," or ";"
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/getid3-core-options-openfile/wp-includes/ID3/getid3.php
+    [line] => 1111
+    [trace] => #0 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:134
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:270
+
+28) GetId3CoreRuntimeBehaviorTest::test_behavior_file_format_detection_matches_expected_contract
+getID3 core execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => ParseError
+    [message] => syntax error, unexpected token "??=", expecting "," or ";"
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/getid3-core-format-detection/wp-includes/ID3/getid3.php
+    [line] => 1111
+    [trace] => #0 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:134
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:334
+
+29) GetId3CoreRuntimeBehaviorTest::test_behavior_tags_calculations_hashing_and_module_loading
+getID3 core execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => ParseError
+    [message] => syntax error, unexpected token "??=", expecting "," or ";"
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/getid3-core-tags-calculations-hash-module/wp-includes/ID3/getid3.php
+    [line] => 1111
+    [trace] => #0 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:134
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:478
+
+30) GetId3CoreRuntimeBehaviorTest::test_behavior_analyze_unknown_local_file_returns_error_without_modules
+getID3 core execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => ParseError
+    [message] => syntax error, unexpected token "??=", expecting "," or ";"
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/getid3-core-analyze-unknown/wp-includes/ID3/getid3.php
+    [line] => 1111
+    [trace] => #0 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:134
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:548
+
+31) GetId3CoreRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_getid3_core_scenarios
+getID3 core execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => ParseError
+    [message] => syntax error, unexpected token "??=", expecting "," or ";"
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/getid3-core-semantic-fingerprint/wp-includes/ID3/getid3.php
+    [line] => 1111
+    [trace] => #0 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:134
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:629
+
+32) WpThemeRuntimeBehaviorTest::test_runtime_loads_wp_theme_class_and_array_access_contract
+WP_Theme execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => ParseError
+    [message] => syntax error, unexpected token "array", expecting "::"
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wp-theme-runtime-load/wp-includes/class-wp-theme.php
+    [line] => 1088
+    [trace] => #0 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/010_WpThemeRuntimeBehaviorTest.php:31
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/010_WpThemeRuntimeBehaviorTest.php:56
+
+33) WpThemeRuntimeBehaviorTest::test_behavior_constructs_valid_theme_and_reads_headers_paths_uris_and_screenshot
+WP_Theme execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => ParseError
+    [message] => syntax error, unexpected token "array", expecting "::"
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wp-theme-valid-theme/wp-includes/class-wp-theme.php
+    [line] => 1088
+    [trace] => #0 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/010_WpThemeRuntimeBehaviorTest.php:31
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/010_WpThemeRuntimeBehaviorTest.php:127
+
+34) WpThemeRuntimeBehaviorTest::test_behavior_missing_stylesheet_and_missing_index_errors_match_contract
+WP_Theme execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => ParseError
+    [message] => syntax error, unexpected token "array", expecting "::"
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wp-theme-error-cases/wp-includes/class-wp-theme.php
+    [line] => 1088
+    [trace] => #0 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/010_WpThemeRuntimeBehaviorTest.php:31
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/010_WpThemeRuntimeBehaviorTest.php:196
+
+35) WpThemeRuntimeBehaviorTest::test_behavior_child_theme_parent_resolution_and_legacy_magic_properties
+WP_Theme execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => ParseError
+    [message] => syntax error, unexpected token "array", expecting "::"
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wp-theme-child-parent/wp-includes/class-wp-theme.php
+    [line] => 1088
+    [trace] => #0 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/010_WpThemeRuntimeBehaviorTest.php:31
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/010_WpThemeRuntimeBehaviorTest.php:270
+
+36) WpThemeRuntimeBehaviorTest::test_behavior_array_access_files_page_templates_cache_delete_and_sort
+WP_Theme execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => ParseError
+    [message] => syntax error, unexpected token "array", expecting "::"
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wp-theme-array-files-page-templates-cache-sort/wp-includes/class-wp-theme.php
+    [line] => 1088
+    [trace] => #0 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/010_WpThemeRuntimeBehaviorTest.php:31
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/010_WpThemeRuntimeBehaviorTest.php:371
+
+37) WpThemeRuntimeBehaviorTest::test_behavior_allowed_theme_logic_for_single_and_multisite
+WP_Theme execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => ParseError
+    [message] => syntax error, unexpected token "array", expecting "::"
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wp-theme-allowed-logic/wp-includes/class-wp-theme.php
+    [line] => 1088
+    [trace] => #0 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/010_WpThemeRuntimeBehaviorTest.php:31
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/010_WpThemeRuntimeBehaviorTest.php:447
+
+38) WpThemeRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_wp_theme_scenarios
+WP_Theme execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => ParseError
+    [message] => syntax error, unexpected token "array", expecting "::"
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wp-theme-semantic-fingerprint/wp-includes/class-wp-theme.php
+    [line] => 1088
+    [trace] => #0 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/010_WpThemeRuntimeBehaviorTest.php:31
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/010_WpThemeRuntimeBehaviorTest.php:541
+
+39) GetId3Id3v2RuntimeBehaviorTest::test_runtime_loads_id3v2_class_and_expected_methods
+ID3v2 module subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: A void function must not return a value in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/id3v2-runtime-load/wp-includes/ID3/module.tag.id3v2.php on line 1927
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/014_GetId3Id3v2RuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/014_GetId3Id3v2RuntimeBehaviorTest.php:62
+
+40) GetId3Id3v2RuntimeBehaviorTest::test_behavior_lookup_helpers_match_expected_contract
+ID3v2 module subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: A void function must not return a value in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/id3v2-helper-lookups/wp-includes/ID3/module.tag.id3v2.php on line 1927
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/014_GetId3Id3v2RuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/014_GetId3Id3v2RuntimeBehaviorTest.php:111
+
+41) GetId3Id3v2RuntimeBehaviorTest::test_behavior_genre_parsing_and_deunsynchronise_match_expected_contract
+ID3v2 module subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: A void function must not return a value in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/id3v2-genre-deunsynch/wp-includes/ID3/module.tag.id3v2.php on line 1927
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/014_GetId3Id3v2RuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/014_GetId3Id3v2RuntimeBehaviorTest.php:170
+
+42) GetId3Id3v2RuntimeBehaviorTest::test_behavior_parse_text_frames_and_user_text_frame
+ID3v2 module subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: A void function must not return a value in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/id3v2-parse-text-frames/wp-includes/ID3/module.tag.id3v2.php on line 1927
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/014_GetId3Id3v2RuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/014_GetId3Id3v2RuntimeBehaviorTest.php:242
+
+43) GetId3Id3v2RuntimeBehaviorTest::test_behavior_analyze_minimal_id3v23_tag_extracts_core_comments
+ID3v2 module subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: A void function must not return a value in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/id3v2-analyze-minimal-tag/wp-includes/ID3/module.tag.id3v2.php on line 1927
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/014_GetId3Id3v2RuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/014_GetId3Id3v2RuntimeBehaviorTest.php:332
+
+44) GetId3Id3v2RuntimeBehaviorTest::test_semantic_fingerprint_for_representative_id3v2_scenarios
+ID3v2 module subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: A void function must not return a value in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/id3v2-semantic-fingerprint/wp-includes/ID3/module.tag.id3v2.php on line 1927
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/014_GetId3Id3v2RuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/014_GetId3Id3v2RuntimeBehaviorTest.php:454
+
+45) TextDiffRuntimeBehaviorTest::test_runtime_loads_text_diff_classes_and_methods
+Text_Diff subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Could not check compatibility between Text_Diff_Op_delete::reverse(): Text_Diff_Op_add and Text_Diff_Op::reverse(): Text_Diff_Op, because class Text_Diff_Op_add is not available in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/text-diff-runtime-load/wp-includes/Text/Diff.php on line 366
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/015_TextDiffRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/015_TextDiffRuntimeBehaviorTest.php:70
+
+46) TextDiffRuntimeBehaviorTest::test_behavior_operation_objects_count_and_reverse_correctly
+Text_Diff subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Could not check compatibility between Text_Diff_Op_delete::reverse(): Text_Diff_Op_add and Text_Diff_Op::reverse(): Text_Diff_Op, because class Text_Diff_Op_add is not available in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/text-diff-ops-contract/wp-includes/Text/Diff.php on line 366
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/015_TextDiffRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/015_TextDiffRuntimeBehaviorTest.php:133
+
+47) TextDiffRuntimeBehaviorTest::test_behavior_diff_native_engine_reconstructs_counts_reverse_and_lcs
+Text_Diff subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Could not check compatibility between Text_Diff_Op_delete::reverse(): Text_Diff_Op_add and Text_Diff_Op::reverse(): Text_Diff_Op, because class Text_Diff_Op_add is not available in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/text-diff-native-engine/wp-includes/Text/Diff.php on line 366
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/015_TextDiffRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/015_TextDiffRuntimeBehaviorTest.php:203
+
+48) TextDiffRuntimeBehaviorTest::test_behavior_backward_compatible_constructor_signature_still_works
+Text_Diff subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Could not check compatibility between Text_Diff_Op_delete::reverse(): Text_Diff_Op_add and Text_Diff_Op::reverse(): Text_Diff_Op, because class Text_Diff_Op_add is not available in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/text-diff-backcompat-constructor/wp-includes/Text/Diff.php on line 366
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/015_TextDiffRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/015_TextDiffRuntimeBehaviorTest.php:243
+
+49) TextDiffRuntimeBehaviorTest::test_behavior_mapped_diff_uses_mapped_lines_but_preserves_original_lines
+Text_Diff subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Could not check compatibility between Text_Diff_Op_delete::reverse(): Text_Diff_Op_add and Text_Diff_Op::reverse(): Text_Diff_Op, because class Text_Diff_Op_add is not available in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/text-mapped-diff/wp-includes/Text/Diff.php on line 366
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/015_TextDiffRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/015_TextDiffRuntimeBehaviorTest.php:276
+
+50) TextDiffRuntimeBehaviorTest::test_behavior_trim_newlines_temp_dir_and_check_contract
+Text_Diff subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Could not check compatibility between Text_Diff_Op_delete::reverse(): Text_Diff_Op_add and Text_Diff_Op::reverse(): Text_Diff_Op, because class Text_Diff_Op_add is not available in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/text-diff-utility-methods/wp-includes/Text/Diff.php on line 366
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/015_TextDiffRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/015_TextDiffRuntimeBehaviorTest.php:314
+
+51) TextDiffRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_text_diff_scenarios
+Text_Diff subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Could not check compatibility between Text_Diff_Op_delete::reverse(): Text_Diff_Op_add and Text_Diff_Op::reverse(): Text_Diff_Op, because class Text_Diff_Op_add is not available in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/text-diff-semantic-fingerprint/wp-includes/Text/Diff.php on line 366
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/015_TextDiffRuntimeBehaviorTest.php:20
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/015_TextDiffRuntimeBehaviorTest.php:368
+
+52) GetId3Ac3RuntimeBehaviorTest::test_runtime_loads_ac3_class_and_expected_methods
+getid3_ac3::syncword constant should exist.
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/016_GetId3Ac3RuntimeBehaviorTest.php:70
+
+53) FtpBaseRuntimeBehaviorTest::test_runtime_loads_ftp_base_class_and_required_constants
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &0 (
+-    'ftp_base' => true
+-    'ftp' => true
++    'ftp_base' => false
++    'ftp' => false
+ )
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:119
+
+54) FtpBaseRuntimeBehaviorTest::test_constructor_initializes_default_state_without_network_connection
+class-ftp.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "ftp_base" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 19
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:78
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:166
+
+55) FtpBaseRuntimeBehaviorTest::test_set_type_accepts_valid_modes_and_rejects_invalid_mode
+class-ftp.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "ftp_base" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 19
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:78
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:212
+
+56) FtpBaseRuntimeBehaviorTest::test_passive_mode_respects_port_mode_availability
+class-ftp.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "ftp_base" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 19
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:78
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:247
+
+57) FtpBaseRuntimeBehaviorTest::test_parselisting_parses_unix_file_directory_and_symlink_entries
+class-ftp.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "ftp_base" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 19
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:78
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:276
+
+58) FtpBaseRuntimeBehaviorTest::test_parselisting_parses_windows_file_and_directory_entries
+class-ftp.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "ftp_base" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 19
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:78
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:308
+
+59) FtpBaseRuntimeBehaviorTest::test_glob_pattern_match_supports_star_and_question_mark_patterns
+class-ftp.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "ftp_base" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 19
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:78
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:335
+
+60) FtpBaseRuntimeBehaviorTest::test_error_stack_pushes_and_pops_last_error
+class-ftp.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "ftp_base" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 19
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:78
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/020_FtpBaseRuntimeBehaviorTest.php:364
+
+61) CustomizeSettingRuntimeBehaviorTest::test_runtime_loads_customize_setting_classes
+customize setting subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Property WP_Customize_Setting::$sanitize_callback cannot have type callable|string in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/runtime_load_classes/wp-includes/class-wp-customize-setting.php on line 63
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:181
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:215
+
+62) CustomizeSettingRuntimeBehaviorTest::test_constructor_normalizes_array_style_id_and_registers_sanitize_filters
+customize setting subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Property WP_Customize_Setting::$sanitize_callback cannot have type callable|string in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/constructor_id_and_filters/wp-includes/class-wp-customize-setting.php on line 63
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:181
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:258
+
+63) CustomizeSettingRuntimeBehaviorTest::test_post_value_is_fetched_from_manager_and_cached
+customize setting subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Property WP_Customize_Setting::$sanitize_callback cannot have type callable|string in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/post_value_cache/wp-includes/class-wp-customize-setting.php on line 63
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:181
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:292
+
+64) CustomizeSettingRuntimeBehaviorTest::test_sanitize_unslashes_value
+customize setting subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Property WP_Customize_Setting::$sanitize_callback cannot have type callable|string in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/sanitize_behavior/wp-includes/class-wp-customize-setting.php on line 63
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:181
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:312
+
+65) CustomizeSettingRuntimeBehaviorTest::test_value_and_update_handle_nested_theme_mods_and_options
+customize setting subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Property WP_Customize_Setting::$sanitize_callback cannot have type callable|string in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/nested_theme_mod_option_behavior/wp-includes/class-wp-customize-setting.php on line 63
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:181
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:361
+
+66) CustomizeSettingRuntimeBehaviorTest::test_preview_filter_replaces_post_value_inside_nested_array
+customize setting subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Property WP_Customize_Setting::$sanitize_callback cannot have type callable|string in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/preview_filter_nested_behavior/wp-includes/class-wp-customize-setting.php on line 63
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:181
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:394
+
+67) CustomizeSettingRuntimeBehaviorTest::test_save_checks_capabilities_and_updates_only_when_allowed
+customize setting subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Property WP_Customize_Setting::$sanitize_callback cannot have type callable|string in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/save_capability_behavior/wp-includes/class-wp-customize-setting.php on line 63
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:181
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:431
+
+68) CustomizeSettingRuntimeBehaviorTest::test_js_value_applies_js_sanitize_filter_and_decodes_html_entities
+customize setting subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Property WP_Customize_Setting::$sanitize_callback cannot have type callable|string in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/js_value_behavior/wp-includes/class-wp-customize-setting.php on line 63
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:181
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:457
+
+69) CustomizeSettingRuntimeBehaviorTest::test_header_and_background_image_specialized_settings_update_expected_targets
+customize setting subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Property WP_Customize_Setting::$sanitize_callback cannot have type callable|string in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/specialized_settings_behavior/wp-includes/class-wp-customize-setting.php on line 63
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:181
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:499
+
+70) CustomizeSettingRuntimeBehaviorTest::test_multidimensional_helpers_replace_get_and_isset_nested_values
+customize setting subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Property WP_Customize_Setting::$sanitize_callback cannot have type callable|string in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/multidimensional_helpers_behavior/wp-includes/class-wp-customize-setting.php on line 63
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:181
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/022_CustomizeSettingRuntimeBehaviorTest.php:533
+
+71) SimplePieSourceRuntimeBehaviorTest::test_runtime_loads_simplepie_source_class_without_fatal_error
+SimplePie Source execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => SimplePie_Source::__construct(): Argument #1 ($item) must be of type SimplePie_Item, SimplePie_Test_Item given, called in /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code on line 257
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/runtime_load_simplepie_source/wp-includes/SimplePie/Source.php
+    [line] => 62
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(257): SimplePie_Source->__construct(Object(SimplePie_Test_Item), Array)
+#1 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(266): simplepie_source_test_instance()
+#2 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#3 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/026_SimplePieSourceRuntimeBehaviorTest.php:307
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/026_SimplePieSourceRuntimeBehaviorTest.php:325
+
+72) SimplePieSourceRuntimeBehaviorTest::test_behavior_extracts_title_links_categories_and_people
+SimplePie Source execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => SimplePie_Source::__construct(): Argument #1 ($item) must be of type SimplePie_Item, SimplePie_Test_Item given, called in /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code on line 257
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/behavior_title_links_categories_people/wp-includes/SimplePie/Source.php
+    [line] => 62
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(257): SimplePie_Source->__construct(Object(SimplePie_Test_Item), Array)
+#1 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(266): simplepie_source_test_instance()
+#2 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#3 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/026_SimplePieSourceRuntimeBehaviorTest.php:307
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/026_SimplePieSourceRuntimeBehaviorTest.php:358
+
+73) SimplePieSourceRuntimeBehaviorTest::test_behavior_extracts_metadata_language_geo_and_image
+SimplePie Source execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => SimplePie_Source::__construct(): Argument #1 ($item) must be of type SimplePie_Item, SimplePie_Test_Item given, called in /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code on line 257
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/behavior_metadata_language_geo_image/wp-includes/SimplePie/Source.php
+    [line] => 62
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(257): SimplePie_Source->__construct(Object(SimplePie_Test_Item), Array)
+#1 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(266): simplepie_source_test_instance()
+#2 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#3 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/026_SimplePieSourceRuntimeBehaviorTest.php:307
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/026_SimplePieSourceRuntimeBehaviorTest.php:392
+
+74) SimplePieSourceRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_source_data
+SimplePie Source execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => SimplePie_Source::__construct(): Argument #1 ($item) must be of type SimplePie_Item, SimplePie_Test_Item given, called in /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code on line 257
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/semantic_fingerprint_source_data/wp-includes/SimplePie/Source.php
+    [line] => 62
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(257): SimplePie_Source->__construct(Object(SimplePie_Test_Item), Array)
+#1 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(266): simplepie_source_test_instance()
+#2 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#3 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/026_SimplePieSourceRuntimeBehaviorTest.php:307
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/026_SimplePieSourceRuntimeBehaviorTest.php:437
+
+75) NetworkThemesAdminRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_network_themes_screen
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'bdca5a7dc3ceb24305ec7ad4158d9b5e'
++'f32934666603b280dcbfc242227f30b0'
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/028_NetworkThemesAdminRuntimeBehaviorTest.php:150
+
+76) PluginsListTableRuntimeBehaviorTest::test_behavior_search_views_bulk_actions_and_row_rendering
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'search'
++'all'
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/031_PluginsListTableRuntimeBehaviorTest.php:238
+
+77) PluginsListTableRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_plugins_table_state
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'53b09cb2e0de4ef15795f073bc66949e'
++'24f7616fcc87fd5ca5a110f439fb44ba'
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/031_PluginsListTableRuntimeBehaviorTest.php:325
+
+78) CommentsListTableRuntimeBehaviorTest::test_runtime_loads_comments_list_table_classes_and_columns
+class-wp-comments-list-table.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_Comments_List_Table::ajax_user_can() has #[\Override] attribute, but no matching parent method exists in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/runtime_load_comments_list_table/wp-admin/includes/class-wp-comments-list-table.php on line 59
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/032_CommentsListTableRuntimeBehaviorTest.php:80
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/032_CommentsListTableRuntimeBehaviorTest.php:120
+
+79) CommentsListTableRuntimeBehaviorTest::test_behavior_prepare_items_fetches_comments_and_pagination_state
+class-wp-comments-list-table.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_Comments_List_Table::ajax_user_can() has #[\Override] attribute, but no matching parent method exists in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/behavior_prepare_items_and_pagination/wp-admin/includes/class-wp-comments-list-table.php on line 59
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/032_CommentsListTableRuntimeBehaviorTest.php:80
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/032_CommentsListTableRuntimeBehaviorTest.php:162
+
+80) CommentsListTableRuntimeBehaviorTest::test_behavior_views_bulk_actions_and_comment_row_rendering
+class-wp-comments-list-table.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_Comments_List_Table::ajax_user_can() has #[\Override] attribute, but no matching parent method exists in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/behavior_views_bulk_actions_row_rendering/wp-admin/includes/class-wp-comments-list-table.php on line 59
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/032_CommentsListTableRuntimeBehaviorTest.php:80
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/032_CommentsListTableRuntimeBehaviorTest.php:213
+
+81) CommentsListTableRuntimeBehaviorTest::test_behavior_post_comments_table_uses_compact_columns_and_fixed_page_size
+class-wp-comments-list-table.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_Comments_List_Table::ajax_user_can() has #[\Override] attribute, but no matching parent method exists in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/behavior_post_comments_subclass/wp-admin/includes/class-wp-comments-list-table.php on line 59
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/032_CommentsListTableRuntimeBehaviorTest.php:80
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/032_CommentsListTableRuntimeBehaviorTest.php:270
+
+82) CommentsListTableRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_comments_table_state
+class-wp-comments-list-table.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_Comments_List_Table::ajax_user_can() has #[\Override] attribute, but no matching parent method exists in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/semantic_fingerprint_comments_table/wp-admin/includes/class-wp-comments-list-table.php on line 59
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/032_CommentsListTableRuntimeBehaviorTest.php:80
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/032_CommentsListTableRuntimeBehaviorTest.php:336
+
+83) TrackbackEndpointRuntimeBehaviorTest::test_runtime_accepts_valid_trackback_and_returns_success_xml
+Failed asserting that '<?xml version="1.0" encoding="utf-8"?>\r\n
+<response>\r\n
+<error>1</error>\r\n
+<message>I really need an ID for this to work.</message>\r\n
+</response>' contains "<error>0</error>".
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/035_TrackbackEndpointRuntimeBehaviorTest.php:83
+
+84) TrackbackEndpointRuntimeBehaviorTest::test_behavior_rejects_duplicate_trackback_url_for_same_post
+Failed asserting that '<?xml version="1.0" encoding="utf-8"?>\r\n
+<response>\r\n
+<error>1</error>\r\n
+<message>I really need an ID for this to work.</message>\r\n
+</response>' contains "We already have a ping from that URL for this post.".
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/035_TrackbackEndpointRuntimeBehaviorTest.php:162
+
+85) TrackbackEndpointRuntimeBehaviorTest::test_behavior_rejects_trackback_when_pings_are_closed
+Failed asserting that '<?xml version="1.0" encoding="utf-8"?>\r\n
+<response>\r\n
+<error>1</error>\r\n
+<message>I really need an ID for this to work.</message>\r\n
+</response>' contains "Sorry, trackbacks are closed for this item.".
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/035_TrackbackEndpointRuntimeBehaviorTest.php:190
+
+86) TrackbackEndpointRuntimeBehaviorTest::test_behavior_redirects_when_request_does_not_look_like_trackback
+Failed asserting that '<?xml version="1.0" encoding="utf-8"?>\r\n
+<response>\r\n
+<error>1</error>\r\n
+<message>I really need an ID for this to work.</message>\r\n
+</response>' contains "REDIRECT:http://example.org/?p=123".
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/035_TrackbackEndpointRuntimeBehaviorTest.php:234
+
+87) TrackbackEndpointRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_trackback_success
+Failed asserting that null is of type "array".
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/035_TrackbackEndpointRuntimeBehaviorTest.php:271
+
+88) MSSitesListTableRuntimeBehaviorTest::test_behavior_prepare_items_searches_path_and_sorts_by_blogname
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'alpha'
++''
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/037_MsSitesListTableRuntimeBehaviorTest.php:207
+
+89) MSSitesListTableRuntimeBehaviorTest::test_behavior_prepare_items_searches_ipv4_registration_log
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'192.168.'
++''
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/037_MsSitesListTableRuntimeBehaviorTest.php:238
+
+90) MSSitesListTableRuntimeBehaviorTest::test_behavior_display_rows_renders_site_state_actions_dates_and_users
+Expected display_rows marker to be true: archived_state
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/037_MsSitesListTableRuntimeBehaviorTest.php:300
+
+91) MSSitesListTableRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_sites_table_behavior
+Array
+(
+    [prepared] => Array
+        (
+            [mode] => list
+            [search] => 
+            [item_ids] => Array
+                (
+                    [0] => 20
+                )
+
+            [pagination] => Array
+                (
+                    [total_items] => 1
+                    [per_page] => 2
+                )
+
+            [columns] => Array
+                (
+                    [0] => cb
+                    [1] => blogname
+                    [2] => lastupdated
+                    [3] => registered
+                    [4] => users
+                )
+
+            [bulk_actions] => Array
+                (
+                    [delete] => Delete
+                    [spam] => Mark as Spam
+                    [notspam] => Not Spam
+                )
+
+            [sortable] => Array
+                (
+                    [blogname] => blogname
+                    [lastupdated] => lastupdated
+                    [registered] => blog_id
+                )
+
+        )
+
+    [row_markers] => Array
+        (
+            [beta_path] => 1
+            [archived_state] => 
+            [spam_state] => 1
+            [edit_action] => 1
+            [dashboard_action] => 1
+            [unarchive_action] => 
+            [notspam_action] => 
+            [delete_action] => 1
+            [visit_action] => 1
+            [never] => 1
+            [user_carol] => 1
+        )
+
+)
+
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'5d57af2e8cd0d54eed3cf096a1b9feb8'
++'c65065ec272dd3355d41b112f7fb3f1d'
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/037_MsSitesListTableRuntimeBehaviorTest.php:368
+
+92) WpUpgraderSkinsRuntimeBehaviorTest::test_base_skin_options_header_footer_feedback_error_and_credentials
+class-wp-upgrader-skins.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => WP_Upgrader_Skin::request_filesystem_credentials(): Return value must be of type bool, array returned
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/behavior_base_skin/wp-admin/includes/class-wp-upgrader-skins.php
+    [line] => 53
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(344): WP_Upgrader_Skin->request_filesystem_credentials(true)
+#1 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#2 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/039_WpUpgraderSkinsRuntimeBehaviorTest.php:371
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/039_WpUpgraderSkinsRuntimeBehaviorTest.php:454
+
+93) WpUpgraderSkinsRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_upgrader_skin_behavior
+class-wp-upgrader-skins.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => WP_Upgrader_Skin::request_filesystem_credentials(): Return value must be of type bool, array returned
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/semantic_fingerprint_upgrader_skins/wp-admin/includes/class-wp-upgrader-skins.php
+    [line] => 53
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(342): WP_Upgrader_Skin->request_filesystem_credentials(false)
+#1 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#2 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/039_WpUpgraderSkinsRuntimeBehaviorTest.php:371
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/039_WpUpgraderSkinsRuntimeBehaviorTest.php:801
+
+94) ImageAdminRuntimeBehaviorTest::test_exif_fraction_and_date_helpers_preserve_wordpress_legacy_conversions
+Failed asserting that 5 is identical to '5'.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/043_ImageAdminRuntimeBehaviorTest.php:415
+
+95) ImageEditorBaseRuntimeBehaviorTest::test_make_image_creates_local_directory_and_returns_callback_result
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &0 (
+-    'make_image_result' => 'callback-result'
++    'make_image_result' => true
+     'mkdir_calls_count' => 1
+     'mkdir_basename' => 'nested'
+     'ops_summary' => Array &1 (
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/044_ImageEditorBaseRuntimeBehaviorTest.php:600
+
+96) GetId3FlvRuntimeBehaviorTest::test_runtime_loads_constants_and_codec_lookup_tables
+module.audio-video.flv.php scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Undefined constant "GETID3_FLV_TAG_AUDIO"
+    [file] => /tmp/flv_runner_2GWRFF(197) : eval()'d code
+    [line] => 11
+    [trace] => #0 /tmp/flv_runner_2GWRFF(197): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/046_GetId3FlvRuntimeBehaviorTest.php:383
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/046_GetId3FlvRuntimeBehaviorTest.php:419
+
+97) GetId3FlvRuntimeBehaviorTest::test_audio_video_header_byte_decoding_and_lookup_behavior_without_full_analyze
+module.audio-video.flv.php scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Undefined constant "GETID3_FLV_VIDEO_H263"
+    [file] => /tmp/flv_runner_jzo8Rb(197) : eval()'d code
+    [line] => 9
+    [trace] => #0 /tmp/flv_runner_jzo8Rb(197): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/046_GetId3FlvRuntimeBehaviorTest.php:383
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/046_GetId3FlvRuntimeBehaviorTest.php:495
+
+98) GetId3FlvRuntimeBehaviorTest::test_semantic_fingerprint_for_codecs_amf_and_exp_golomb_escape
+module.audio-video.flv.php scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Call to private method AVCSequenceParameterSetReader::expGolombUe() from global scope
+    [file] => /tmp/flv_runner_tFwvLV(197) : eval()'d code
+    [line] => 12
+    [trace] => #0 /tmp/flv_runner_tFwvLV(197): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/046_GetId3FlvRuntimeBehaviorTest.php:383
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/046_GetId3FlvRuntimeBehaviorTest.php:584
+
+99) AboutAdminRuntimeBehaviorTest::test_runtime_loads_about_page_enqueues_mediaelement_and_renders_english_overview
+Failed asserting that '<!-- admin-bootstrap-stub -->\n
+<!-- admin-header-stub -->\n
+<!--[if lt IE 9]><script>document.createElement('audio');document.createElement('video');</script><![endif]-->\r\n
+<div class="wrap about-wrap">\r\n
+\r\n
+<h1>Welcome to WordPress&amp;nbsp;4.0</h1>\r\n
+\r\n
+<div class="about-text">Thank you for updating! WordPress 4.0 brings you a smoother writing and management experience.</div>\r\n
+\r\n
+<div class="wp-badge">Version 4.0</div>\r\n
+\r\n
+<h2 class="nav-tab-wrapper">\r\n
+	<a href="about.php" class="nav-tab nav-tab-active">\r\n
+		What&#8217;s New	</a><a href="credits.php" class="nav-tab">\r\n
+		Credits	</a><a href="freedoms.php" class="nav-tab">\r\n
+		Freedoms	</a>\r\n
+</h2>\r\n
+\r\n
+<div class="changelog">\r\n
+	<div class="about-overview">\r\n
+					<embed src="//v.wordpress.com/bUdzKMro" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true" wmode="transparent"></embed>\r\n
+			</div>\r\n
+\r\n
+	<hr />\r\n
+\r\n
+	<div class="feature-section col two-col">\r\n
+		<div class="col-1">\r\n
+			<h3>Manage your media with style</h3>\r\n
+			<p>Explore your uploads in a beautiful, endless grid. A new details preview makes viewing and editing any amount of media in sequence a snap.</p>\r\n
+		</div>\r\n
+		<div class="col-2 last-feature">\r\n
+			<img src="//s.w.org/images/core/4.0/media.jpg" />\r\n
+		</div>\r\n
+	</div>\r\n
+\r\n
+	<hr />\r\n
+\r\n
+	<div class="feature-section col two-col">\r\n
+		<div class="col-1">\r\n
+			<div class="about-video about-video-embed">\r\n
+				<video data-mp4="//s.w.org/images/core/4.0/embed.mp4" data-ogv="//s.w.org/images/core/4.0/embed.ogv" data-webm="//s.w.org/images/core/4.0/embed.webm" data-width="500" data-height="352" data-loop="1" data-autoplay="1"></video>			</div>\r\n
+		</div>\r\n
+		<div class="col-2 last-feature">\r\n
+			<h3>Working with embeds has never been easier</h3>\r\n
+			<p>Paste in a YouTube URL on a new line, and watch it magically become an embedded video. Now try it with a tweet. Oh yeah &#8212; embedding has become a visual experience. The editor shows a true preview of your embedded content, saving you time and giving you confidence.</p>\r\n
+			<p>We&#8217;ve expanded the services supported by default, too &#8212; you can embed videos from CollegeHumor, playlists from YouTube, and talks from TED. <a href="http://codex.wordpress.org/Embeds">Check out all of the embeds</a> that WordPress supports.</p>\r\n
+		</div>\r\n
+	</div>\r\n
+\r\n
+	<hr />\r\n
+\r\n
+	<div class="feature-section col two-col">\r\n
+		<div class="col-1">\r\n
+			<h3>Focus on your content</h3>\r\n
+			<p>Writing and editing is smoother and more immersive with an editor that expands to fit your content as you write, and keeps the formatting tools available at all times.</p>\r\n
+		</div>\r\n
+		<div class="col-2 last-feature">\r\n
+			<div class="about-video about-video-focus">\r\n
+				<video data-mp4="//s.w.org/images/core/4.0/focus.mp4" data-ogv="//s.w.org/images/core/4.0/focus.ogv" data-webm="//s.w.org/images/core/4.0/focus.webm" data-width="500" data-height="281" data-loop="1" data-autoplay="1"></video>			</div>\r\n
+		</div>\r\n
+	</div>\r\n
+\r\n
+	<hr />\r\n
+\r\n
+	<div class="feature-section col two-col">\r\n
+		<div class="col-1">\r\n
+			<img src="//s.w.org/images/core/4.0/plugins.png" />\r\n
+		</div>\r\n
+		<div class="col-2 last-feature">\r\n
+			<h3 class="higher">Finding the right plugin</h3>\r\n
+			<p>There are more than 30,000 free and open source plugins in the WordPress plugin directory. WordPress 4.0 makes it easier to find the right one for your needs, with new metrics, improved search, and a more visual browsing experience.</p>\r\n
+			<a href="http://example.org/wp-admin/plugin-install.php" class="button button-large button-primary">Browse plugins</a>\r\n
+		</div>\r\n
+	</div>\r\n
+</div>\r\n
+\r\n
+<hr />\r\n
+\r\n
+<div class="changelog under-the-hood">\r\n
+	<h3>Under the Hood</h3>\r\n
+\r\n
+	<div class="feature-section col three-col">\r\n
+		<div>\r\n
+		<h4>Customizer API</h4>\r\n
+			<p>Contexts, panels, and a wider array of controls are now supported in the customizer.</p>\r\n
+		</div>\r\n
+		<div>\r\n
+			<h4>Query Ordering</h4>\r\n
+			<p>Developers have more flexibility creating <code>ORDER&nbsp;BY</code> clauses through <code>WP_Query</code>.</p>\r\n
+		</div>\r\n
+		<div class="last-feature">\r\n
+			<h4>External Libraries</h4>\r\n
+			<p>Updated libraries: TinyMCE&nbsp;4.1.3, jQuery&nbsp;1.11.1, MediaElement&nbsp;2.15.</p>\r\n
+		</div>\r\n
+	</div>\r\n
+\r\n
+	<hr />\r\n
+\r\n
+	<div class="return-to-dashboard">\r\n
+				<a href="http://example.org/wp-admin/">Go to Dashboard &rarr; Home</a>\r\n
+	</div>\r\n
+\r\n
+</div>\r\n
+\r\n
+</div>\r\n
+<!-- admin-footer-stub -->\n
+' contains "Welcome to WordPress&nbsp;4.0".
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/048_AboutAdminRuntimeBehaviorTest.php:369
+
+100) AboutAdminRuntimeBehaviorTest::test_non_english_locale_uses_static_overview_image_instead_of_flash_embed
+Failed asserting that '<!-- admin-bootstrap-stub -->\n
+<!-- admin-header-stub -->\n
+<!--[if lt IE 9]><script>document.createElement('audio');document.createElement('video');</script><![endif]-->\r\n
+<div class="wrap about-wrap">\r\n
+\r\n
+<h1>Welcome to WordPress&amp;nbsp;4.0.1</h1>\r\n
+\r\n
+<div class="about-text">Thank you for updating! WordPress 4.0.1 brings you a smoother writing and management experience.</div>\r\n
+\r\n
+<div class="wp-badge">Version 4.0.1</div>\r\n
+\r\n
+<h2 class="nav-tab-wrapper">\r\n
+	<a href="about.php" class="nav-tab nav-tab-active">\r\n
+		What&#8217;s New	</a><a href="credits.php" class="nav-tab">\r\n
+		Credits	</a><a href="freedoms.php" class="nav-tab">\r\n
+		Freedoms	</a>\r\n
+</h2>\r\n
+\r\n
+<div class="changelog">\r\n
+	<div class="about-overview">\r\n
+					<img class="about-overview-img" src="//s.w.org/images/core/4.0/wp40.png" width="640" height="360" />\r\n
+			</div>\r\n
+\r\n
+	<hr />\r\n
+\r\n
+	<div class="feature-section col two-col">\r\n
+		<div class="col-1">\r\n
+			<h3>Manage your media with style</h3>\r\n
+			<p>Explore your uploads in a beautiful, endless grid. A new details preview makes viewing and editing any amount of media in sequence a snap.</p>\r\n
+		</div>\r\n
+		<div class="col-2 last-feature">\r\n
+			<img src="//s.w.org/images/core/4.0/media.jpg" />\r\n
+		</div>\r\n
+	</div>\r\n
+\r\n
+	<hr />\r\n
+\r\n
+	<div class="feature-section col two-col">\r\n
+		<div class="col-1">\r\n
+			<div class="about-video about-video-embed">\r\n
+				<video data-mp4="//s.w.org/images/core/4.0/embed.mp4" data-ogv="//s.w.org/images/core/4.0/embed.ogv" data-webm="//s.w.org/images/core/4.0/embed.webm" data-width="500" data-height="352" data-loop="1" data-autoplay="1"></video>			</div>\r\n
+		</div>\r\n
+		<div class="col-2 last-feature">\r\n
+			<h3>Working with embeds has never been easier</h3>\r\n
+			<p>Paste in a YouTube URL on a new line, and watch it magically become an embedded video. Now try it with a tweet. Oh yeah &#8212; embedding has become a visual experience. The editor shows a true preview of your embedded content, saving you time and giving you confidence.</p>\r\n
+			<p>We&#8217;ve expanded the services supported by default, too &#8212; you can embed videos from CollegeHumor, playlists from YouTube, and talks from TED. <a href="http://codex.wordpress.org/Embeds">Check out all of the embeds</a> that WordPress supports.</p>\r\n
+		</div>\r\n
+	</div>\r\n
+\r\n
+	<hr />\r\n
+\r\n
+	<div class="feature-section col two-col">\r\n
+		<div class="col-1">\r\n
+			<h3>Focus on your content</h3>\r\n
+			<p>Writing and editing is smoother and more immersive with an editor that expands to fit your content as you write, and keeps the formatting tools available at all times.</p>\r\n
+		</div>\r\n
+		<div class="col-2 last-feature">\r\n
+			<div class="about-video about-video-focus">\r\n
+				<video data-mp4="//s.w.org/images/core/4.0/focus.mp4" data-ogv="//s.w.org/images/core/4.0/focus.ogv" data-webm="//s.w.org/images/core/4.0/focus.webm" data-width="500" data-height="281" data-loop="1" data-autoplay="1"></video>			</div>\r\n
+		</div>\r\n
+	</div>\r\n
+\r\n
+	<hr />\r\n
+\r\n
+	<div class="feature-section col two-col">\r\n
+		<div class="col-1">\r\n
+			<img src="//s.w.org/images/core/4.0/plugins.png" />\r\n
+		</div>\r\n
+		<div class="col-2 last-feature">\r\n
+			<h3 class="higher">Finding the right plugin</h3>\r\n
+			<p>There are more than 30,000 free and open source plugins in the WordPress plugin directory. WordPress 4.0 makes it easier to find the right one for your needs, with new metrics, improved search, and a more visual browsing experience.</p>\r\n
+			<a href="http://example.org/wp-admin/plugin-install.php" class="button button-large button-primary">Browse plugins</a>\r\n
+		</div>\r\n
+	</div>\r\n
+</div>\r\n
+\r\n
+<hr />\r\n
+\r\n
+<div class="changelog under-the-hood">\r\n
+	<h3>Under the Hood</h3>\r\n
+\r\n
+	<div class="feature-section col three-col">\r\n
+		<div>\r\n
+		<h4>Customizer API</h4>\r\n
+			<p>Contexts, panels, and a wider array of controls are now supported in the customizer.</p>\r\n
+		</div>\r\n
+		<div>\r\n
+			<h4>Query Ordering</h4>\r\n
+			<p>Developers have more flexibility creating <code>ORDER&nbsp;BY</code> clauses through <code>WP_Query</code>.</p>\r\n
+		</div>\r\n
+		<div class="last-feature">\r\n
+			<h4>External Libraries</h4>\r\n
+			<p>Updated libraries: TinyMCE&nbsp;4.1.3, jQuery&nbsp;1.11.1, MediaElement&nbsp;2.15.</p>\r\n
+		</div>\r\n
+	</div>\r\n
+\r\n
+	<hr />\r\n
+\r\n
+	<div class="return-to-dashboard">\r\n
+				<a href="http://example.org/wp-admin/">Go to Dashboard &rarr; Home</a>\r\n
+	</div>\r\n
+\r\n
+</div>\r\n
+\r\n
+</div>\r\n
+<!-- admin-footer-stub -->\n
+' contains "Welcome to WordPress&nbsp;4.0.1".
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/048_AboutAdminRuntimeBehaviorTest.php:386
+
+101) AboutAdminRuntimeBehaviorTest::test_semantic_fingerprint_for_multisite_updated_about_page_markers
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &0 (
+     'has_admin_header' => true
+     'has_admin_footer' => true
+-    'display_version_402' => true
++    'display_version_402' => false
+     'has_english_flash_embed' => true
+     'has_media_heading' => true
+     'has_embeds_heading' => true
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/048_AboutAdminRuntimeBehaviorTest.php:489
+
+102) SimplePieParserRuntimeBehaviorTest::test_runtime_loads_and_registry_can_be_attached
+Parser.php scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Cannot access protected property SimplePie_Parser::$separator
+    [file] => /tmp/simplepie_parser_runner_BtGyAr(146) : eval()'d code
+    [line] => 11
+    [trace] => #0 /tmp/simplepie_parser_runner_BtGyAr(146): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/049_SimplePieParserRuntimeBehaviorTest.php:264
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/049_SimplePieParserRuntimeBehaviorTest.php:295
+
+103) SimplePieParserRuntimeBehaviorTest::test_manual_tag_stack_tracks_xml_base_language_attributes_and_child_data
+Parser.php scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => Cannot assign null to property SimplePie_Parser::$data of type array
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/049_simplepie_parser_manual_stack/wp-includes/SimplePie/Parser.php
+    [line] => 260
+    [trace] => #0 /tmp/simplepie_parser_runner_gsUg19(146) : eval()'d code(5): SimplePie_Parser->tag_open(NULL, 'http://example....', Array)
+#1 /tmp/simplepie_parser_runner_gsUg19(146): eval()
+#2 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/049_SimplePieParserRuntimeBehaviorTest.php:264
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/049_SimplePieParserRuntimeBehaviorTest.php:370
+
+104) SimplePieParserRuntimeBehaviorTest::test_parse_strips_bom_rewrites_xml_declaration_and_reports_errors
+Parser.php scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => Cannot assign null to property SimplePie_Parser::$data of type array
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/049_simplepie_parser_parse_behavior/wp-includes/SimplePie/Parser.php
+    [line] => 260
+    [trace] => #0 [internal function]: SimplePie_Parser->tag_open(Object(XMLParser), 'rss', Array)
+#1 /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/049_simplepie_parser_parse_behavior/wp-includes/SimplePie/Parser.php(130): xml_parse(Object(XMLParser), '<?xml version="...', true)
+#2 /tmp/simplepie_parser_runner_9FItJa(146) : eval()'d code(6): SimplePie_Parser->parse('<?xml version="...', 'US-ASCII')
+#3 /tmp/simplepie_parser_runner_9FItJa(146): eval()
+#4 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/049_SimplePieParserRuntimeBehaviorTest.php:264
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/049_SimplePieParserRuntimeBehaviorTest.php:415
+
+105) SimplePieParserRuntimeBehaviorTest::test_semantic_fingerprint_for_xhtml_construct_and_parser_stack_state
+Parser.php scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => Cannot assign null to property SimplePie_Parser::$data of type array
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/049_simplepie_parser_semantic_fingerprint/wp-includes/SimplePie/Parser.php
+    [line] => 260
+    [trace] => #0 /tmp/simplepie_parser_runner_q3Yd2z(146) : eval()'d code(4): SimplePie_Parser->tag_open(NULL, 'http://www.w3.o...', Array)
+#1 /tmp/simplepie_parser_runner_q3Yd2z(146): eval()
+#2 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/049_SimplePieParserRuntimeBehaviorTest.php:264
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/049_SimplePieParserRuntimeBehaviorTest.php:460
+
+106) WpOembedRuntimeBehaviorTest::test_runtime_loads_constructor_registers_filter_and_popular_providers
+class-oembed.php subprocess failed.
+STDERR:
+PHP Fatal error:  Type WP_Error|object|false contains both object and a class type, which is redundant in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_runtime_load/wp-includes/class-oembed.php on line 399
+SHUTDOWN_FATAL: Type WP_Error|object|false contains both object and a class type, which is redundant
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_runtime_load/wp-includes/class-oembed.php
+LINE: 399
+
+STDOUT:
+
+Fatal error: Type WP_Error|object|false contains both object and a class type, which is redundant in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_runtime_load/wp-includes/class-oembed.php on line 399
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/050_WpOembedRuntimeBehaviorTest.php:279
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/050_WpOembedRuntimeBehaviorTest.php:314
+
+107) WpOembedRuntimeBehaviorTest::test_early_provider_add_remove_and_provider_matching_behavior
+class-oembed.php subprocess failed.
+STDERR:
+PHP Fatal error:  Type WP_Error|object|false contains both object and a class type, which is redundant in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_provider_matching/wp-includes/class-oembed.php on line 399
+SHUTDOWN_FATAL: Type WP_Error|object|false contains both object and a class type, which is redundant
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_provider_matching/wp-includes/class-oembed.php
+LINE: 399
+
+STDOUT:
+
+Fatal error: Type WP_Error|object|false contains both object and a class type, which is redundant in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_provider_matching/wp-includes/class-oembed.php on line 399
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/050_WpOembedRuntimeBehaviorTest.php:279
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/050_WpOembedRuntimeBehaviorTest.php:355
+
+108) WpOembedRuntimeBehaviorTest::test_discover_prefers_json_link_and_falls_back_to_xml_link
+class-oembed.php subprocess failed.
+STDERR:
+PHP Fatal error:  Type WP_Error|object|false contains both object and a class type, which is redundant in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_discover/wp-includes/class-oembed.php on line 399
+SHUTDOWN_FATAL: Type WP_Error|object|false contains both object and a class type, which is redundant
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_discover/wp-includes/class-oembed.php
+LINE: 399
+
+STDOUT:
+
+Fatal error: Type WP_Error|object|false contains both object and a class type, which is redundant in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_discover/wp-includes/class-oembed.php on line 399
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/050_WpOembedRuntimeBehaviorTest.php:279
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/050_WpOembedRuntimeBehaviorTest.php:397
+
+109) WpOembedRuntimeBehaviorTest::test_fetch_builds_provider_url_parses_json_and_get_html_filters_result
+class-oembed.php subprocess failed.
+STDERR:
+PHP Fatal error:  Type WP_Error|object|false contains both object and a class type, which is redundant in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_fetch_get_html/wp-includes/class-oembed.php on line 399
+SHUTDOWN_FATAL: Type WP_Error|object|false contains both object and a class type, which is redundant
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_fetch_get_html/wp-includes/class-oembed.php
+LINE: 399
+
+STDOUT:
+
+Fatal error: Type WP_Error|object|false contains both object and a class type, which is redundant in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_fetch_get_html/wp-includes/class-oembed.php on line 399
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/050_WpOembedRuntimeBehaviorTest.php:279
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/050_WpOembedRuntimeBehaviorTest.php:446
+
+110) WpOembedRuntimeBehaviorTest::test_semantic_fingerprint_for_data_conversion_and_private_call_compatibility
+class-oembed.php subprocess failed.
+STDERR:
+PHP Fatal error:  Type WP_Error|object|false contains both object and a class type, which is redundant in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_semantic_fingerprint/wp-includes/class-oembed.php on line 399
+SHUTDOWN_FATAL: Type WP_Error|object|false contains both object and a class type, which is redundant
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_semantic_fingerprint/wp-includes/class-oembed.php
+LINE: 399
+
+STDOUT:
+
+Fatal error: Type WP_Error|object|false contains both object and a class type, which is redundant in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/050_oembed_semantic_fingerprint/wp-includes/class-oembed.php on line 399
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/050_WpOembedRuntimeBehaviorTest.php:279
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/050_WpOembedRuntimeBehaviorTest.php:504
+
+111) WpMsDeprecatedRuntimeBehaviorTest::test_user_and_password_deprecated_wrappers_delegate_to_expected_helpers
+Failed asserting that 123 is identical to '123'.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/051_WpMsDeprecatedRuntimeBehaviorTest.php:424
+
+112) WpMsThemesListTableRuntimeBehaviorTest::test_runtime_loads_and_ajax_capability_depends_on_screen_mode
+Failed asserting that null is identical to 'enabled'.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/052_WpMsThemesListTableRuntimeBehaviorTest.php:475
+
+113) WpMsThemesListTableRuntimeBehaviorTest::test_prepare_items_network_mode_partitions_update_and_paginates_themes
+Failed asserting that null is identical to Array &0 (
+    'all' => 3
+    'search' => 0
+    'enabled' => 1
+    'disabled' => 2
+    'upgrade' => 1
+    'broken' => 1
+).
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/052_WpMsThemesListTableRuntimeBehaviorTest.php:520
+
+114) WpMsThemesListTableRuntimeBehaviorTest::test_prepare_items_site_mode_excludes_network_enabled_themes
+Failed asserting that null is identical to Array &0 (
+    'all' => 2
+    'search' => 0
+    'enabled' => 1
+    'disabled' => 1
+    'upgrade' => 0
+    'broken' => 0
+).
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/052_WpMsThemesListTableRuntimeBehaviorTest.php:577
+
+115) WpMsThemesListTableRuntimeBehaviorTest::test_single_row_renders_network_actions_meta_filters_and_row_hooks
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/052_WpMsThemesListTableRuntimeBehaviorTest.php:662
+
+116) WpMsThemesListTableRuntimeBehaviorTest::test_semantic_fingerprint_for_disabled_network_theme_listing
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+         0 => 'alpha-style'
+         1 => 'beta-style'
+     )
+-    'totals' => Array &2 (
+-        'all' => 3
+-        'search' => 0
+-        'enabled' => 1
+-        'disabled' => 2
+-        'upgrade' => 1
+-        'broken' => 0
+-    )
+-    'bulk_actions' => Array &3 (
++    'totals' => null
++    'bulk_actions' => Array &2 (
+         'enable-selected' => 'Network Enable'
+         'update-selected' => 'Update'
+         'delete-selected' => 'Delete'
+     )
+-    'view_keys' => Array &4 (
++    'view_keys' => Array &3 (
+         0 => 'all'
+         1 => 'enabled'
+         2 => 'disabled'
+@@ @@
+     'has_gamma_absent' => true
+     'has_network_enable' => true
+     'has_delete_action' => true
+-    'action_tags' => Array &5 (
++    'action_tags' => Array &4 (
+         0 => 'after_theme_row'
+         1 => 'after_theme_row_alpha-style'
+         2 => 'after_theme_row'
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/052_WpMsThemesListTableRuntimeBehaviorTest.php:797
+
+117) NavMenuRuntimeBehaviorTest::test_menu_object_create_update_delete_and_duplicate_protection
+nav-menu.php scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => wp_get_nav_menu_object(): Return value must be of type WP_Term|WP_Error|false, stdClass returned
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/054_nav_menu_object_lifecycle/wp-includes/nav-menu.php
+    [line] => 44
+    [trace] => #0 /tmp/nav_menu_runner_6bC450(339) : eval()'d code(11): wp_get_nav_menu_object('main-menu')
+#1 /tmp/nav_menu_runner_6bC450(339): eval()
+#2 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/054_NavMenuRuntimeBehaviorTest.php:457
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/054_NavMenuRuntimeBehaviorTest.php:604
+
+118) NavMenuRuntimeBehaviorTest::test_update_custom_nav_menu_item_persists_post_meta_and_term_link
+nav-menu.php scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => wp_get_nav_menu_object(): Return value must be of type WP_Term|WP_Error|false, stdClass returned
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/054_nav_menu_custom_item_update/wp-includes/nav-menu.php
+    [line] => 44
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/054_nav_menu_custom_item_update/wp-includes/nav-menu.php(336): wp_get_nav_menu_object(12)
+#1 /tmp/nav_menu_runner_TdsWZP(339) : eval()'d code(9): wp_update_nav_menu_item(12, 0, Array)
+#2 /tmp/nav_menu_runner_TdsWZP(339): eval()
+#3 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/054_NavMenuRuntimeBehaviorTest.php:457
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/054_NavMenuRuntimeBehaviorTest.php:655
+
+119) NavMenuRuntimeBehaviorTest::test_semantic_fingerprint_for_menu_item_setup_filtering_and_sorting
+nav-menu.php scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => wp_get_nav_menu_object(): Return value must be of type WP_Term|WP_Error|false, stdClass returned
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/054_nav_menu_semantic_fingerprint/wp-includes/nav-menu.php
+    [line] => 44
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/054_nav_menu_semantic_fingerprint/wp-includes/nav-menu.php(552): wp_get_nav_menu_object(77)
+#1 /tmp/nav_menu_runner_KJByGW(339) : eval()'d code(45): wp_get_nav_menu_items(77, Array)
+#2 /tmp/nav_menu_runner_KJByGW(339): eval()
+#3 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/054_NavMenuRuntimeBehaviorTest.php:457
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/054_NavMenuRuntimeBehaviorTest.php:761
+
+120) MagpieRssRuntimeBehaviorTest::test_runtime_loads_magpie_classes_functions_and_wp_hooks
+rss.php execution failed.
+Exception: ParseError
+Message: syntax error, unexpected token ".="
+File: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/055_rss_runtime_load/wp-includes/rss.php
+Line: 193
+Output preview:
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/055_MagpieRssRuntimeBehaviorTest.php:107
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/055_MagpieRssRuntimeBehaviorTest.php:138
+
+121) MagpieRssRuntimeBehaviorTest::test_behavior_parses_rss_feed_and_normalizes_item_fields
+rss.php execution failed.
+Exception: ParseError
+Message: syntax error, unexpected token ".="
+File: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/055_rss_parse_rss/wp-includes/rss.php
+Line: 193
+Output preview:
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/055_MagpieRssRuntimeBehaviorTest.php:107
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/055_MagpieRssRuntimeBehaviorTest.php:173
+
+122) MagpieRssRuntimeBehaviorTest::test_behavior_parses_atom_feed_and_normalizes_content_fields
+rss.php execution failed.
+Exception: ParseError
+Message: syntax error, unexpected token ".="
+File: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/055_rss_parse_atom/wp-includes/rss.php
+Line: 193
+Output preview:
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/055_MagpieRssRuntimeBehaviorTest.php:107
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/055_MagpieRssRuntimeBehaviorTest.php:210
+
+123) MagpieRssRuntimeBehaviorTest::test_behavior_remote_fetch_wrapper_and_cache_round_trip
+rss.php execution failed.
+Exception: ParseError
+Message: syntax error, unexpected token ".="
+File: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/055_rss_remote_and_cache/wp-includes/rss.php
+Line: 193
+Output preview:
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/055_MagpieRssRuntimeBehaviorTest.php:107
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/055_MagpieRssRuntimeBehaviorTest.php:261
+
+124) MagpieRssRuntimeBehaviorTest::test_semantic_fingerprint_for_dates_status_cache_and_rendered_rss
+rss.php execution failed.
+Exception: ParseError
+Message: syntax error, unexpected token ".="
+File: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/055_rss_semantic_fingerprint/wp-includes/rss.php
+Line: 193
+Output preview:
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/055_MagpieRssRuntimeBehaviorTest.php:107
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/055_MagpieRssRuntimeBehaviorTest.php:323
+
+125) AkismetRuntimeBehaviorTest::test_runtime_init_registers_expected_hooks_once
+class.akismet.php subprocess failed.
+STDERR:
+PHP Fatal error:  Void can only be used as a standalone type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/056_akismet_runtime_hooks/wp-content/plugins/akismet/class.akismet.php on line 600
+
+STDOUT preview:
+{
+    "ok": false,
+    "exception": null,
+    "fatal": {
+        "message": "Void can only be used as a standalone type",
+        "file": "/work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/056_akismet_runtime_hooks/wp-content/plugins/akismet/class.akismet.php",
+        "line": 600,
+        "type": 64
+    },
+    "output": ""
+}
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/056_AkismetRuntimeBehaviorTest.php:75
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/056_AkismetRuntimeBehaviorTest.php:126
+
+126) AkismetRuntimeBehaviorTest::test_behavior_api_key_and_query_building_are_stable
+class.akismet.php subprocess failed.
+STDERR:
+PHP Fatal error:  Void can only be used as a standalone type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/056_akismet_api_key_query/wp-content/plugins/akismet/class.akismet.php on line 600
+
+STDOUT preview:
+{
+    "ok": false,
+    "exception": null,
+    "fatal": {
+        "message": "Void can only be used as a standalone type",
+        "file": "/work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/056_akismet_api_key_query/wp-content/plugins/akismet/class.akismet.php",
+        "line": 600,
+        "type": 64
+    },
+    "output": ""
+}
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/056_AkismetRuntimeBehaviorTest.php:75
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/056_AkismetRuntimeBehaviorTest.php:168
+
+127) AkismetRuntimeBehaviorTest::test_behavior_last_comment_matching_and_nonce_output
+class.akismet.php subprocess failed.
+STDERR:
+PHP Fatal error:  Void can only be used as a standalone type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/056_akismet_last_comment_nonce/wp-content/plugins/akismet/class.akismet.php on line 600
+
+STDOUT preview:
+{
+    "ok": false,
+    "exception": null,
+    "fatal": {
+        "message": "Void can only be used as a standalone type",
+        "file": "/work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/056_akismet_last_comment_nonce/wp-content/plugins/akismet/class.akismet.php",
+        "line": 600,
+        "type": 64
+    },
+    "output": ""
+}
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/056_AkismetRuntimeBehaviorTest.php:75
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/056_AkismetRuntimeBehaviorTest.php:208
+
+128) AkismetRuntimeBehaviorTest::test_behavior_roles_discard_policy_and_moderation_email_suppression
+class.akismet.php subprocess failed.
+STDERR:
+PHP Fatal error:  Void can only be used as a standalone type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/056_akismet_roles_discard_moderation/wp-content/plugins/akismet/class.akismet.php on line 600
+
+STDOUT preview:
+{
+    "ok": false,
+    "exception": null,
+    "fatal": {
+        "message": "Void can only be used as a standalone type",
+        "file": "/work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/056_akismet_roles_discard_moderation/wp-content/plugins/akismet/class.akismet.php",
+        "line": 600,
+        "type": 64
+    },
+    "output": ""
+}
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/056_AkismetRuntimeBehaviorTest.php:75
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/056_AkismetRuntimeBehaviorTest.php:257
+
+129) AkismetRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_akismet_helpers
+class.akismet.php subprocess failed.
+STDERR:
+PHP Fatal error:  Void can only be used as a standalone type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/056_akismet_semantic_fingerprint/wp-content/plugins/akismet/class.akismet.php on line 600
+
+STDOUT preview:
+{
+    "ok": false,
+    "exception": null,
+    "fatal": {
+        "message": "Void can only be used as a standalone type",
+        "file": "/work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/056_akismet_semantic_fingerprint/wp-content/plugins/akismet/class.akismet.php",
+        "line": 600,
+        "type": 64
+    },
+    "output": ""
+}
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/056_AkismetRuntimeBehaviorTest.php:75
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/056_AkismetRuntimeBehaviorTest.php:312
+
+130) TextDiffEngineStringRuntimeBehaviorTest::test_runtime_loads_engine_and_reports_invalid_mode_errors
+Text_Diff_Engine_string scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => InvalidArgumentException
+    [message] => Type of diff is unsupported. Must be one of: autodetect, context, unified.
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/runtime_errors/wp-includes/Text/Diff/Engine/string.php
+    [line] => 62
+    [trace] => #0 /tmp/diff_string_runner_IgbDZE(146) : eval()'d code(3): Text_Diff_Engine_string->diff('plain text\n', 'binary')
+#1 /tmp/diff_string_runner_IgbDZE(146): eval()
+#2 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/062_TextDiffEngineStringRuntimeBehaviorTest.php:258
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/062_TextDiffEngineStringRuntimeBehaviorTest.php:285
+
+131) GetId3DtsRuntimeBehaviorTest::test_channel_dialog_and_invalid_scalar_lookup_behavior
+module.audio.dts.php scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => getid3_dts::bitrateLookup(): Argument #1 ($index) must be of type int, string given, called in /tmp/dts_runner_XcxipN(135) : eval()'d code on line 22
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/channel_dialog_invalid_inputs/wp-includes/ID3/module.audio.dts.php
+    [line] => 190
+    [trace] => #0 /tmp/dts_runner_XcxipN(135) : eval()'d code(22): getid3_dts::bitrateLookup('not-a-number')
+#1 /tmp/dts_runner_XcxipN(135): eval()
+#2 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/063_GetId3DtsRuntimeBehaviorTest.php:247
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/063_GetId3DtsRuntimeBehaviorTest.php:330
+
+132) WpDiffRuntimeBehaviorTest::test_runtime_loads_renderer_classes_and_constructor_sets_split_view
+wp-diff.php subprocess failed.
+STDERR:
+PHP Fatal error:  WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/runtime_load_constructor/wp-includes/wp-diff.php on line 447
+SHUTDOWN_FATAL: WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/runtime_load_constructor/wp-includes/wp-diff.php
+LINE: 447
+
+STDOUT:
+
+Fatal error: WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/runtime_load_constructor/wp-includes/wp-diff.php on line 447
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/064_WpDiffRuntimeBehaviorTest.php:203
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/064_WpDiffRuntimeBehaviorTest.php:245
+
+133) WpDiffRuntimeBehaviorTest::test_added_deleted_and_context_rows_preserve_split_and_unified_markup
+wp-diff.php subprocess failed.
+STDERR:
+PHP Fatal error:  WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/line_rendering_helpers/wp-includes/wp-diff.php on line 447
+SHUTDOWN_FATAL: WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/line_rendering_helpers/wp-includes/wp-diff.php
+LINE: 447
+
+STDOUT:
+
+Fatal error: WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/line_rendering_helpers/wp-includes/wp-diff.php on line 447
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/064_WpDiffRuntimeBehaviorTest.php:203
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/064_WpDiffRuntimeBehaviorTest.php:271
+
+134) WpDiffRuntimeBehaviorTest::test_string_distance_and_difference_helpers_match_original_formula
+wp-diff.php subprocess failed.
+STDERR:
+PHP Fatal error:  WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/distance_helpers/wp-includes/wp-diff.php on line 447
+SHUTDOWN_FATAL: WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/distance_helpers/wp-includes/wp-diff.php
+LINE: 447
+
+STDOUT:
+
+Fatal error: WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/distance_helpers/wp-includes/wp-diff.php on line 447
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/064_WpDiffRuntimeBehaviorTest.php:203
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/064_WpDiffRuntimeBehaviorTest.php:298
+
+135) WpDiffRuntimeBehaviorTest::test_interleave_changed_lines_identifies_matches_insertions_and_row_alignment
+wp-diff.php subprocess failed.
+STDERR:
+PHP Fatal error:  WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/interleave_changed_lines/wp-includes/wp-diff.php on line 447
+SHUTDOWN_FATAL: WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/interleave_changed_lines/wp-includes/wp-diff.php
+LINE: 447
+
+STDOUT:
+
+Fatal error: WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/interleave_changed_lines/wp-includes/wp-diff.php on line 447
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/064_WpDiffRuntimeBehaviorTest.php:203
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/064_WpDiffRuntimeBehaviorTest.php:327
+
+136) WpDiffRuntimeBehaviorTest::test_changed_lines_render_inline_diff_rows_and_semantic_fingerprint
+wp-diff.php subprocess failed.
+STDERR:
+PHP Fatal error:  WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/changed_lines_fingerprint/wp-includes/wp-diff.php on line 447
+SHUTDOWN_FATAL: WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/changed_lines_fingerprint/wp-includes/wp-diff.php
+LINE: 447
+
+STDOUT:
+
+Fatal error: WP_Text_Diff_Renderer_Table::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/changed_lines_fingerprint/wp-includes/wp-diff.php on line 447
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/064_WpDiffRuntimeBehaviorTest.php:203
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/064_WpDiffRuntimeBehaviorTest.php:375
+
+137) WpImageEditorImagickRuntimeBehaviorTest::test_runtime_loads_class_reports_environment_and_supports_known_mime_types
+WP_Image_Editor_Imagick subprocess failed.
+STDERR:
+PHP Fatal error:  Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/runtime_supports_mime/wp-includes/class-wp-image-editor-imagick.php on line 24
+SHUTDOWN_FATAL: Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/runtime_supports_mime/wp-includes/class-wp-image-editor-imagick.php
+LINE: 24
+
+STDOUT:
+
+Fatal error: Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/runtime_supports_mime/wp-includes/class-wp-image-editor-imagick.php on line 24
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/065_WpImageEditorImagickRuntimeBehaviorTest.php:580
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/065_WpImageEditorImagickRuntimeBehaviorTest.php:614
+
+138) WpImageEditorImagickRuntimeBehaviorTest::test_load_missing_and_valid_file_behaviors_are_preserved
+WP_Image_Editor_Imagick subprocess failed.
+STDERR:
+PHP Fatal error:  Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/load_missing_and_valid/wp-includes/class-wp-image-editor-imagick.php on line 24
+SHUTDOWN_FATAL: Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/load_missing_and_valid/wp-includes/class-wp-image-editor-imagick.php
+LINE: 24
+
+STDOUT:
+
+Fatal error: Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/load_missing_and_valid/wp-includes/class-wp-image-editor-imagick.php on line 24
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/065_WpImageEditorImagickRuntimeBehaviorTest.php:580
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/065_WpImageEditorImagickRuntimeBehaviorTest.php:646
+
+139) WpImageEditorImagickRuntimeBehaviorTest::test_resize_crop_rotate_and_flip_update_size_and_imagick_operations
+WP_Image_Editor_Imagick subprocess failed.
+STDERR:
+PHP Fatal error:  Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/transform_operations/wp-includes/class-wp-image-editor-imagick.php on line 24
+SHUTDOWN_FATAL: Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/transform_operations/wp-includes/class-wp-image-editor-imagick.php
+LINE: 24
+
+STDOUT:
+
+Fatal error: Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/transform_operations/wp-includes/class-wp-image-editor-imagick.php on line 24
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/065_WpImageEditorImagickRuntimeBehaviorTest.php:580
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/065_WpImageEditorImagickRuntimeBehaviorTest.php:692
+
+140) WpImageEditorImagickRuntimeBehaviorTest::test_set_quality_save_and_stream_preserve_output_metadata_and_blob
+WP_Image_Editor_Imagick subprocess failed.
+STDERR:
+PHP Fatal error:  Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/quality_save_stream/wp-includes/class-wp-image-editor-imagick.php on line 24
+SHUTDOWN_FATAL: Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/quality_save_stream/wp-includes/class-wp-image-editor-imagick.php
+LINE: 24
+
+STDOUT:
+
+Fatal error: Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/quality_save_stream/wp-includes/class-wp-image-editor-imagick.php on line 24
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/065_WpImageEditorImagickRuntimeBehaviorTest.php:580
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/065_WpImageEditorImagickRuntimeBehaviorTest.php:747
+
+141) WpImageEditorImagickRuntimeBehaviorTest::test_multi_resize_generates_metadata_for_valid_sizes_and_ignores_invalid_size_specs
+WP_Image_Editor_Imagick subprocess failed.
+STDERR:
+PHP Fatal error:  Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/multi_resize_metadata/wp-includes/class-wp-image-editor-imagick.php on line 24
+SHUTDOWN_FATAL: Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type
+FILE: /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/multi_resize_metadata/wp-includes/class-wp-image-editor-imagick.php
+LINE: 24
+
+STDOUT:
+
+Fatal error: Method WP_Image_Editor_Imagick::__destruct() cannot declare a return type in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/multi_resize_metadata/wp-includes/class-wp-image-editor-imagick.php on line 24
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/065_WpImageEditorImagickRuntimeBehaviorTest.php:580
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/065_WpImageEditorImagickRuntimeBehaviorTest.php:800
+
+142) WpDependenciesRuntimeBehaviorTest::test_runtime_loads_dependency_classes_and_default_state
+class.wp-dependencies.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => _WP_Dependency::__construct(): Argument #3 ($deps) must be of type array, string given, called in /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code on line 3
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/runtime_load_defaults/wp-includes/class.wp-dependencies.php
+    [line] => 437
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(3): _WP_Dependency->__construct('legacy', '/legacy.js', 'not-array', false, NULL)
+#1 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#2 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/066_WpDependenciesRuntimeBehaviorTest.php:33
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/066_WpDependenciesRuntimeBehaviorTest.php:76
+
+143) WpDependenciesRuntimeBehaviorTest::test_register_data_query_and_remove_preserve_observable_state
+class.wp-dependencies.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => _WP_Dependency::add_data(): Argument #1 ($name) must be of type string, array given, called in /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code on line 7
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/register_data_query_remove/wp-includes/class.wp-dependencies.php
+    [line] => 455
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(7): _WP_Dependency->add_data(Array, 'value')
+#1 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#2 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/066_WpDependenciesRuntimeBehaviorTest.php:33
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/066_WpDependenciesRuntimeBehaviorTest.php:135
+
+144) UserAdminApiRuntimeBehaviorTest::test_edit_user_returns_validation_errors_for_bad_new_user_payload
+user.php scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Call to undefined method WP_Error::has_errors()
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/edit_user_validation_errors/wp-admin/includes/user.php
+    [line] => 182
+    [trace] => #0 /tmp/user_admin_runner_FRinlh(394) : eval()'d code(8): edit_user(0)
+#1 /tmp/user_admin_runner_FRinlh(394): eval()
+#2 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/067_UserAdminApiRuntimeBehaviorTest.php:505
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/067_UserAdminApiRuntimeBehaviorTest.php:615
+
+145) UserAdminApiRuntimeBehaviorTest::test_edit_user_creates_new_user_with_sanitized_fields_role_and_notification
+user.php scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Call to undefined method WP_Error::has_errors()
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/edit_user_create_success/wp-admin/includes/user.php
+    [line] => 182
+    [trace] => #0 /tmp/user_admin_runner_fty9FZ(394) : eval()'d code(19): edit_user(0)
+#1 /tmp/user_admin_runner_fty9FZ(394): eval()
+#2 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/067_UserAdminApiRuntimeBehaviorTest.php:505
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/067_UserAdminApiRuntimeBehaviorTest.php:656
+
+146) PostRevisionsRuntimeBehaviorTest::test_revision_lookup_autosave_detection_and_version_parsing
+revision.php scenario failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => _wp_get_post_revision_version(): Argument #1 ($revision) must be of type WP_Post|array, stdClass given, called in /tmp/revision_runner_lbojza(365) : eval()'d code on line 54
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/lookup_autosave_version/wp-includes/revision.php
+    [line] => 605
+    [trace] => #0 /tmp/revision_runner_lbojza(365) : eval()'d code(54): _wp_get_post_revision_version(Object(stdClass))
+#1 /tmp/revision_runner_lbojza(365): eval()
+#2 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/068_PostRevisionsRuntimeBehaviorTest.php:536
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/068_PostRevisionsRuntimeBehaviorTest.php:748
+
+147) SimplePieFileRuntimeBehaviorTest::test_missing_local_file_records_failure_without_throwing
+Failed asserting that true is false.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/070_SimplePieFileRuntimeBehaviorTest.php:318
+
+148) SimplePieFileRuntimeBehaviorTest::test_empty_local_file_is_treated_as_failed_read_like_original_simplepie
+Failed asserting that true is false.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/070_SimplePieFileRuntimeBehaviorTest.php:347
+
+149) NetworkUpgradeRuntimeBehaviorTest::test_upgrade_action_updates_site_option_for_first_batch_and_processes_blogs
+Failed asserting that '<!-- help-tab:overview:Overview -->\n
+<!-- help-sidebar:upgrade-docs -->\n
+<!-- admin-header-stub -->\n
+<!-- current-user-can:manage_network -->\n
+<div class="wrap"><h2>Upgrade Network</h2><!-- update-site-option:wpmu_upgrade_site=40000 -->\n
+<!-- db-query:SELECT * FROM wp_blogs WHERE site_id = 1 AND spam = '0' AND deleted = '0' AND archived = '0' ORDER BY registered DESC LIMIT 0, 5 -->\n
+<ul><!-- switch-to-blog:101 -->\n
+<!-- restore-current-blog -->\n
+<li>http://site101.example.org/</li><!-- remote-get:http://site101.example.org/wp-admin/upgrade.php?step=upgrade_db:timeout=120:httpversion=1.1 -->\n
+<!-- action:after_mu_upgrade:array -->\n
+<!-- action:wpmu_upgrade_site:101 -->\n
+<!-- switch-to-blog:102 -->\n
+<!-- restore-current-blog -->\n
+<li>http://site102.example.org/</li><!-- remote-get:http://site102.example.org/wp-admin/upgrade.php?step=upgrade_db:timeout=120:httpversion=1.1 -->\n
+<!-- action:after_mu_upgrade:array -->\n
+<!-- action:wpmu_upgrade_site:102 -->\n
+</ul>		<p>If your browser doesn’t start loading the next page automatically, click this link: <a class="button" href="upgrade.php?action=upgrade&amp;n=5">Next Sites</a></p>\r\n
+		<script>\r\n
+			(function() {\r\n
+				'use strict';\r\n
+				setTimeout(function() {\r\n
+					window.location.href = "upgrade.php?action=upgrade&amp;n=5";\r\n
+				}, 250);\r\n
+			})();\r\n
+		</script>\r\n
+</div>\r\n
+\r\n
+<!-- admin-footer-stub -->\n
+' contains "upgrade.php?action=upgrade&n=5".
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/076_NetworkUpgradeRuntimeBehaviorTest.php:553
+
+150) NetworkUpgradeRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_upgrade_batch
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+     'processed_blog_102' => true
+     'remote_101' => true
+     'remote_102' => true
+-    'next_batch_5' => true
++    'next_batch_5' => false
+ )
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/076_NetworkUpgradeRuntimeBehaviorTest.php:658
+
+151) WpAjaxResponseRuntimeBehaviorTest::test_runtime_loads_wp_ajax_response_class_and_methods
+class-wp-ajax-response.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_Ajax_Response::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/runtime_load/wp-includes/class-wp-ajax-response.php on line 50
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:237
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:273
+
+152) WpAjaxResponseRuntimeBehaviorTest::test_constructor_adds_initial_response_and_magic_get_exposes_responses
+class-wp-ajax-response.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_Ajax_Response::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/constructor_adds_response/wp-includes/class-wp-ajax-response.php on line 50
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:237
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:306
+
+153) WpAjaxResponseRuntimeBehaviorTest::test_magic_set_isset_and_unset_preserve_backwards_compatibility
+class-wp-ajax-response.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_Ajax_Response::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/magic_properties/wp-includes/class-wp-ajax-response.php on line 50
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:237
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:333
+
+154) WpAjaxResponseRuntimeBehaviorTest::test_add_builds_basic_xml_response_using_post_action_fallback
+class-wp-ajax-response.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_Ajax_Response::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/basic_add_response/wp-includes/class-wp-ajax-response.php on line 50
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:237
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:362
+
+155) WpAjaxResponseRuntimeBehaviorTest::test_add_sanitizes_position_includes_old_id_and_supplemental_xml
+class-wp-ajax-response.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_Ajax_Response::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/add_with_supplemental/wp-includes/class-wp-ajax-response.php on line 50
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:237
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:389
+
+156) WpAjaxResponseRuntimeBehaviorTest::test_add_serializes_wp_error_data_when_id_is_wp_error
+class-wp-ajax-response.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_Ajax_Response::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wp_error_as_id/wp-includes/class-wp-ajax-response.php on line 50
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:237
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:412
+
+157) WpAjaxResponseRuntimeBehaviorTest::test_add_serializes_array_error_data
+class-wp-ajax-response.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_Ajax_Response::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/wp_error_array_data/wp-includes/class-wp-ajax-response.php on line 50
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:237
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:438
+
+158) WpAjaxResponseRuntimeBehaviorTest::test_send_outputs_xml_wrapper_and_terminates_with_wp_die_when_doing_ajax
+class-wp-ajax-response.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_Ajax_Response::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/send_outputs_xml/wp-includes/class-wp-ajax-response.php on line 50
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:237
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:465
+
+159) WpAjaxResponseRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_ajax_responses
+class-wp-ajax-response.php subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: WP_Ajax_Response::__set(): Return type must be void when declared in /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/semantic_fingerprint/wp-includes/class-wp-ajax-response.php on line 50
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:237
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/084_WpAjaxResponseRuntimeBehaviorTest.php:530
+
+160) NetworkUserNewRuntimeBehaviorTest::test_runtime_loads_add_new_user_page_and_renders_form
+Failed asserting that '<!-- admin-header-stub -->\n
+\r\n
+<div class="wrap">\r\n
+<h1 id="add-new-user">Add New User</h1>\r\n
+\r\n
+    <form action="http://example.org/wp-admin/network/user-new.php?action=add-user" id="adduser" method="post" novalidate="novalidate">\r\n
+    <table class="form-table" role="presentation">\r\n
+        <tr class="form-field form-required">\r\n
+            <th scope="row"><label for="username">Username</label></th>\r\n
+            <td><input type="text" id="username" class="regular-text" name="user[username]" required aria-required="true" autocapitalize="none" autocorrect="off" maxlength="60" /></td>\r\n
+        </tr>\r\n
+        <tr class="form-field form-required">\r\n
+            <th scope="row"><label for="email">Email</label></th>\r\n
+            <td><input type="email" id="email" class="regular-text" name="user[email]" required aria-required="true" /></td>\r\n
+        </tr>\r\n
+        <tr class="form-field">\r\n
+            <td colspan="2">A link to set a new password will be mailed to the user at the above email address.</td>\r\n
+        </tr>\r\n
+    </table>\r\n
+    <input type="hidden" name="_wpnonce_add-user" value="nonce-add-user" />    <input type="submit" name="add-user" id="add-user" class="button button-primary" value="Add User" />    </form>\r\n
+</div>\r\n
+<!-- admin-footer-stub -->\n
+' contains "<h2 id="add-new-user">Add New User</h2>".
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/086_NetworkUserNewRuntimeBehaviorTest.php:561
+
+161) NetworkUserNewRuntimeBehaviorTest::test_update_added_message_is_rendered
+Failed asserting that '<!-- admin-header-stub -->\n
+\r\n
+<div class="wrap">\r\n
+<h1 id="add-new-user">Add New User</h1>\r\n
+<div id="message" class="updated notice is-dismissible"><p>User added.</p></div>\r\n
+    <form action="http://example.org/wp-admin/network/user-new.php?action=add-user" id="adduser" method="post" novalidate="novalidate">\r\n
+    <table class="form-table" role="presentation">\r\n
+        <tr class="form-field form-required">\r\n
+            <th scope="row"><label for="username">Username</label></th>\r\n
+            <td><input type="text" id="username" class="regular-text" name="user[username]" required aria-required="true" autocapitalize="none" autocorrect="off" maxlength="60" /></td>\r\n
+        </tr>\r\n
+        <tr class="form-field form-required">\r\n
+            <th scope="row"><label for="email">Email</label></th>\r\n
+            <td><input type="email" id="email" class="regular-text" name="user[email]" required aria-required="true" /></td>\r\n
+        </tr>\r\n
+        <tr class="form-field">\r\n
+            <td colspan="2">A link to set a new password will be mailed to the user at the above email address.</td>\r\n
+        </tr>\r\n
+    </table>\r\n
+    <input type="hidden" name="_wpnonce_add-user" value="nonce-add-user" />    <input type="submit" name="add-user" id="add-user" class="button button-primary" value="Add User" />    </form>\r\n
+</div>\r\n
+<!-- admin-footer-stub -->\n
+' contains "<div id="message" class="updated"><p>User added.</p></div>".
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/086_NetworkUserNewRuntimeBehaviorTest.php:596
+
+162) NetworkUserNewRuntimeBehaviorTest::test_add_user_action_shows_validation_errors_for_invalid_submission
+network/user-new.php execution failed.
+Array
+(
+    [ok] => 
+    [output] => 
+    [screen] => Array
+        (
+            [help_tabs] => Array
+                (
+                    [0] => overview
+                )
+
+            [help_sidebar] => <p><strong>For more information:</strong></p><p><a href="https://codex.wordpress.org/Network_Admin_Users_Screen" target="_blank">Documentation on Network Users</a></p><p><a href="https://wordpress.org/support/forum/multisite/" target="_blank">Support Forums</a></p>
+        )
+
+    [redirects] => Array
+        (
+        )
+
+    [created_users] => Array
+        (
+        )
+
+    [notifications] => Array
+        (
+        )
+
+    [nonce_checks] => Array
+        (
+            [0] => Array
+                (
+                    [action] => add-user
+                    [query_arg] => _wpnonce_add-user
+                )
+
+        )
+
+    [nonce_fields] => Array
+        (
+        )
+
+    [submit_buttons] => Array
+        (
+        )
+
+    [exception_class] => Error
+    [message] => Call to undefined method WP_Error::has_errors()
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/invalid_add_user_submission/wp-admin/network/user-new.php
+    [line] => 58
+    [trace] => #0 /tmp/network_user_new_runner_UnkIsw(423): require()
+#1 {main}
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/086_NetworkUserNewRuntimeBehaviorTest.php:539
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/086_NetworkUserNewRuntimeBehaviorTest.php:614
+
+163) NetworkUserNewRuntimeBehaviorTest::test_add_user_action_creates_user_sends_notification_and_redirects
+network/user-new.php execution failed.
+Array
+(
+    [ok] => 
+    [output] => 
+    [screen] => Array
+        (
+            [help_tabs] => Array
+                (
+                    [0] => overview
+                )
+
+            [help_sidebar] => <p><strong>For more information:</strong></p><p><a href="https://codex.wordpress.org/Network_Admin_Users_Screen" target="_blank">Documentation on Network Users</a></p><p><a href="https://wordpress.org/support/forum/multisite/" target="_blank">Support Forums</a></p>
+        )
+
+    [redirects] => Array
+        (
+        )
+
+    [created_users] => Array
+        (
+        )
+
+    [notifications] => Array
+        (
+        )
+
+    [nonce_checks] => Array
+        (
+            [0] => Array
+                (
+                    [action] => add-user
+                    [query_arg] => _wpnonce_add-user
+                )
+
+        )
+
+    [nonce_fields] => Array
+        (
+        )
+
+    [submit_buttons] => Array
+        (
+        )
+
+    [exception_class] => Error
+    [message] => Call to undefined method WP_Error::has_errors()
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/successful_add_user_submission/wp-admin/network/user-new.php
+    [line] => 58
+    [trace] => #0 /tmp/network_user_new_runner_5xw2E8(423): require()
+#1 {main}
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/086_NetworkUserNewRuntimeBehaviorTest.php:539
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/086_NetworkUserNewRuntimeBehaviorTest.php:649
+
+164) NetworkUserNewRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_rendered_page
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+     )
+     'has_header_stub' => true
+     'has_footer_stub' => true
+-    'has_h2' => true
++    'has_h2' => false
+     'has_update_message' => true
+     'has_form' => true
+     'has_username_input' => true
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/086_NetworkUserNewRuntimeBehaviorTest.php:782
+
+165) SimplePieRestrictionRuntimeBehaviorTest::test_runtime_loads_simplepie_restriction_class
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &0 (
+-    'class_exists' => true
+-    'has_constructor' => true
+-    'has_to_string' => true
+-    'has_get_relationship' => true
+-    'has_get_type' => true
+-    'has_get_value' => true
++    'class_exists' => false
++    'has_constructor' => false
++    'has_to_string' => false
++    'has_get_relationship' => false
++    'has_get_type' => false
++    'has_get_value' => false
+ )
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/087_SimplePieRestrictionRuntimeBehaviorTest.php:58
+
+166) SimplePieRestrictionRuntimeBehaviorTest::test_constructor_stores_relationship_type_and_value
+SimplePie_Restriction execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "SimplePie_Restriction" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 1
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/087_SimplePieRestrictionRuntimeBehaviorTest.php:33
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/087_SimplePieRestrictionRuntimeBehaviorTest.php:86
+
+167) SimplePieRestrictionRuntimeBehaviorTest::test_constructor_defaults_to_null_values
+SimplePie_Restriction execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "SimplePie_Restriction" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 1
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/087_SimplePieRestrictionRuntimeBehaviorTest.php:33
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/087_SimplePieRestrictionRuntimeBehaviorTest.php:116
+
+168) SimplePieRestrictionRuntimeBehaviorTest::test_getters_return_mixed_null_and_string_values_correctly
+SimplePie_Restriction execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "SimplePie_Restriction" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 1
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/087_SimplePieRestrictionRuntimeBehaviorTest.php:33
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/087_SimplePieRestrictionRuntimeBehaviorTest.php:146
+
+169) SimplePieRestrictionRuntimeBehaviorTest::test_to_string_returns_md5_of_serialized_object
+SimplePie_Restriction execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "SimplePie_Restriction" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 1
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/087_SimplePieRestrictionRuntimeBehaviorTest.php:33
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/087_SimplePieRestrictionRuntimeBehaviorTest.php:172
+
+170) SimplePieRestrictionRuntimeBehaviorTest::test_to_string_for_empty_restriction_is_deterministic
+SimplePie_Restriction execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "SimplePie_Restriction" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 1
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/087_SimplePieRestrictionRuntimeBehaviorTest.php:33
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/087_SimplePieRestrictionRuntimeBehaviorTest.php:191
+
+171) SimplePieRestrictionRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_restriction_objects
+SimplePie_Restriction execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "SimplePie_Restriction" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 2
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/087_SimplePieRestrictionRuntimeBehaviorTest.php:33
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/087_SimplePieRestrictionRuntimeBehaviorTest.php:224
+
+172) SimplePieCategoryRuntimeBehaviorTest::test_runtime_loads_simplepie_category_class
+Failed asserting that two arrays are identical.
+--- Expected
++++ Actual
+@@ @@
+ Array &0 (
+-    'class_exists' => true
++    'class_exists' => false
+     'methods' => Array &1 (
+-        'constructor' => true
+-        'to_string' => true
+-        'get_term' => true
+-        'get_scheme' => true
+-        'get_label' => true
++        'constructor' => false
++        'to_string' => false
++        'get_term' => false
++        'get_scheme' => false
++        'get_label' => false
+     )
+ )
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/089_SimplePieCategoryRuntimeBehaviorTest.php:60
+
+173) SimplePieCategoryRuntimeBehaviorTest::test_constructor_stores_category_term_scheme_and_label
+SimplePie_Category execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "SimplePie_Category" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 1
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/089_SimplePieCategoryRuntimeBehaviorTest.php:33
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/089_SimplePieCategoryRuntimeBehaviorTest.php:94
+
+174) SimplePieCategoryRuntimeBehaviorTest::test_default_constructor_leaves_category_fields_null
+SimplePie_Category execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "SimplePie_Category" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 1
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/089_SimplePieCategoryRuntimeBehaviorTest.php:33
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/089_SimplePieCategoryRuntimeBehaviorTest.php:124
+
+175) SimplePieCategoryRuntimeBehaviorTest::test_get_label_falls_back_to_term_when_label_is_null
+SimplePie_Category execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "SimplePie_Category" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 1
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/089_SimplePieCategoryRuntimeBehaviorTest.php:33
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/089_SimplePieCategoryRuntimeBehaviorTest.php:156
+
+176) SimplePieCategoryRuntimeBehaviorTest::test_getters_preserve_empty_strings_and_zero_like_values
+SimplePie_Category execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "SimplePie_Category" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 1
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/089_SimplePieCategoryRuntimeBehaviorTest.php:33
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/089_SimplePieCategoryRuntimeBehaviorTest.php:184
+
+177) SimplePieCategoryRuntimeBehaviorTest::test_to_string_returns_md5_hash_of_serialized_category_object
+SimplePie_Category execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "SimplePie_Category" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 1
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/089_SimplePieCategoryRuntimeBehaviorTest.php:33
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/089_SimplePieCategoryRuntimeBehaviorTest.php:214
+
+178) SimplePieCategoryRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_category_states
+SimplePie_Category execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => Error
+    [message] => Class "SimplePie_Category" not found
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code
+    [line] => 1
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#1 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/089_SimplePieCategoryRuntimeBehaviorTest.php:33
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/089_SimplePieCategoryRuntimeBehaviorTest.php:266
+
+179) WpCustomizeSectionRuntimeBehaviorTest::test_check_capabilities_handles_capability_and_theme_support_combinations
+class-wp-customize-section.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => Cannot assign array to property WP_Customize_Section::$capability of type string
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/behavior_check_capabilities/wp-includes/class-wp-customize-section.php
+    [line] => 97
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(146): WP_Customize_Section->__construct(Object(CustomizeSectionManagerStub), 'array_args', Array)
+#1 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(169): customize_section_new('array_args', Array)
+#2 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#3 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/097_WpCustomizeSectionRuntimeBehaviorTest.php:193
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/097_WpCustomizeSectionRuntimeBehaviorTest.php:323
+
+180) WpCustomizeSectionRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_customize_section_behavior
+class-wp-customize-section.php execution failed.
+Array
+(
+    [ok] => 
+    [exception_class] => TypeError
+    [message] => Cannot assign array to property WP_Customize_Section::$capability of type string
+    [file] => /work/runs/replay_gemini_2_5_pro/score/harness/build/sandboxes/opus_5_5/semantic_fingerprint_customize_section/wp-includes/class-wp-customize-section.php
+    [line] => 97
+    [trace] => #0 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(146): WP_Customize_Section->__construct(Object(CustomizeSectionManagerStub), 'array_capabilit...', Array)
+#1 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36) : eval()'d code(181): customize_section_new('array_capabilit...', Array)
+#2 /work/runs/replay_gemini_2_5_pro/score/harness/tests/support/library-runner.php(36): eval()
+#3 {main}
+    [output] => 
+)
+
+Failed asserting that false is true.
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/097_WpCustomizeSectionRuntimeBehaviorTest.php:193
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/097_WpCustomizeSectionRuntimeBehaviorTest.php:526
+
+181) WpLinksOpmlRuntimeBehaviorTest::test_link_cat_request_filters_categories_and_handles_all_zero_invalid_values
+Failed asserting that '<?xml version="1.0"?>\n
+<opml version="1.0">\r\n
+	<head>\r\n
+		<title>Links for Example Links Blog</title>\r\n
+		<dateCreated>Mon, 02 Nov 2026 23:37:04 GMT</dateCreated>\r\n
+			</head>\r\n
+	<body>\r\n
+</body>\r\n
+</opml>' contains "Tech &amp; Tools".
+
+/work/runs/replay_gemini_2_5_pro/score/harness/tests/files/100_WpLinksOpmlRuntimeBehaviorTest.php:499
+
+ERRORS!
+Tests: 631, Assertions: 5030, Errors: 1, Failures: 181.

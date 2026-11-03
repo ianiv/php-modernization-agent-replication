@@ -10,6 +10,11 @@ if [ -f "$OUT/agent.json" ]; then echo "skip $ID (done)"; exit 0; fi
 
 WS=$("$ROOT/harness/make_ws.sh" "$ID" "$RUN") || { echo "ws failed $ID"; exit 1; }
 . "$WS/tools/_env"
+# WordPress path for the prompt. History: the first batch used an unanchored grep, which also matched the example
+# comments in file-map.php and broke prompt construction for 003 and 008; it was anchored (below) before those two
+# were re-run. Known bug, kept so the script regenerates the shipped prompts: from 013 on most file-map keys end in
+# ".php" ('013_file.php') while subject IDs do not ('013_file'), so this exact-key match returns nothing and 85 of 100
+# shipped prompts say "It is the WordPress file ``." A future run should also match "'$ID.php'".
 WPPATH=$(grep -E "^[[:space:]]*'$ID'" "$WS/config/file-map.php" | head -1 | sed -E "s/.*=> '([^']+)'.*/\1/")
 PROMPT=$(sed -e "s|{{TARGET}}|$TARGET|g" -e "s|{{TESTFILE}}|$TESTFILE|g" -e "s|{{WPPATH}}|$WPPATH|g" "$ROOT/harness/task_prompt.md")
 echo "$PROMPT" > "$OUT/prompt.md"

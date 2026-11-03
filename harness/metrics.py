@@ -1,5 +1,5 @@
 """Compute the paper's behavioural + resolution metrics for one scored run."""
-import argparse, csv, json, os, re, xml.etree.ElementTree as ET
+import argparse, csv, json, os, re, sys, xml.etree.ElementTree as ET
 from collections import defaultdict
 
 ap = argparse.ArgumentParser()
@@ -61,7 +61,10 @@ resolved = introduced = 0
 rows = []
 for fid in sorted(per_file):
     o = orig_rules.get(fid, set()); n = new_rules.get(fid, set())
-    if rector_err.get(fid):  # unparseable => nothing counts as resolved
+    if fid not in new_rules:  # no Rector result for this file => treat like unparseable, nothing resolved
+        print(f"warning: no Rector result for file {fid}; counting none of its {len(o)} findings as resolved", file=sys.stderr)
+        r, intro, remaining = 0, 0, sorted(o)
+    elif rector_err.get(fid):  # unparseable => nothing counts as resolved
         r, intro, remaining = 0, 0, sorted(o)
     else:
         r, intro, remaining = len(o - n), len(n - o), sorted(n)

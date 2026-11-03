@@ -1,0 +1,60 @@
+{
+ "4.9.35|opus55_agent": {
+  "other": 8,
+  "trivial (visibility/brace)": 18,
+  "ctor (__construct call/decl)": 33
+ },
+ "4.9.35|opus55_oneshot": {
+  "other": 49,
+  "trivial (visibility/brace)": 155,
+  "ctor (__construct call/decl)": 30,
+  "multi-line reformat fragment": 9
+ },
+ "4.9.35|sonnet4": {
+  "other": 48,
+  "trivial (visibility/brace)": 94,
+  "ctor (__construct call/decl)": 4,
+  "multi-line reformat fragment": 7
+ },
+ "4.9.35|rector": {
+  "trivial (visibility/brace)": 3,
+  "other": 3,
+  "ctor (__construct call/decl)": 19
+ },
+ "7.1.4|opus55_agent": {
+  "other": 139,
+  "trivial (visibility/brace)": 56,
+  "ctor (__construct call/decl)": 40,
+  "?? operator": 56,
+  "str_contains/starts/ends_with": 5,
+  "__DIR__": 4,
+  "multi-line reformat fragment": 15
+ },
+ "7.1.4|opus55_oneshot": {
+  "other": 355,
+  "multi-line reformat fragment": 102,
+  "trivial (visibility/brace)": 578,
+  "ctor (__construct call/decl)": 33,
+  "?? operator": 56,
+  "__DIR__": 24,
+  "str_contains/starts/ends_with": 10
+ },
+ "7.1.4|sonnet4": {
+  "other": 326,
+  "multi-line reformat fragment": 47,
+  "trivial (visibility/brace)": 371,
+  "?? operator": 51,
+  "ctor (__construct call/decl)": 14,
+  "str_contains/starts/ends_with": 27,
+  "__DIR__": 11
+ },
+ "7.1.4|rector": {
+  "other": 115,
+  "trivial (visibility/brace)": 22,
+  "ctor (__construct call/decl)": 19,
+  "?? operator": 55,
+  "str_contains/starts/ends_with": 6,
+  "multi-line reformat fragment": 14,
+  "__DIR__": 2
+ }
+}
