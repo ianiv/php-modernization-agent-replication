@@ -1,0 +1,98 @@
+PHPUnit 9.6.34 by Sebastian Bergmann and contributors.
+
+...................................................FFFFFF......  63 / 631 (  9%)
+............................................................... 126 / 631 ( 19%)
+............................................................... 189 / 631 ( 29%)
+............................................................... 252 / 631 ( 39%)
+............................................................... 315 / 631 ( 49%)
+............................................................... 378 / 631 ( 59%)
+............................................................... 441 / 631 ( 69%)
+............................................................... 504 / 631 ( 79%)
+............................................................... 567 / 631 ( 89%)
+............................................................... 630 / 631 ( 99%)
+.                                                               631 / 631 (100%)
+
+Time: 05:44.484, Memory: 16.00 MB
+
+There were 6 failures:
+
+1) GetId3CoreRuntimeBehaviorTest::test_runtime_loads_getid3_core_classes_and_default_options
+getID3 core subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in /work/runs/opus55/score/harness/build/sandboxes/opus_5_5/getid3-core-runtime-load/wp-includes/ID3/getid3.lib.php on line 21
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/opus55/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:123
+/work/runs/opus55/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:172
+
+2) GetId3CoreRuntimeBehaviorTest::test_behavior_set_option_and_openfile_contract
+getID3 core subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in /work/runs/opus55/score/harness/build/sandboxes/opus_5_5/getid3-core-options-openfile/wp-includes/ID3/getid3.lib.php on line 21
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/opus55/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:123
+/work/runs/opus55/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:270
+
+3) GetId3CoreRuntimeBehaviorTest::test_behavior_file_format_detection_matches_expected_contract
+getID3 core subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in /work/runs/opus55/score/harness/build/sandboxes/opus_5_5/getid3-core-format-detection/wp-includes/ID3/getid3.lib.php on line 21
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/opus55/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:123
+/work/runs/opus55/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:334
+
+4) GetId3CoreRuntimeBehaviorTest::test_behavior_tags_calculations_hashing_and_module_loading
+getID3 core subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in /work/runs/opus55/score/harness/build/sandboxes/opus_5_5/getid3-core-tags-calculations-hash-module/wp-includes/ID3/getid3.lib.php on line 21
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/opus55/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:123
+/work/runs/opus55/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:478
+
+5) GetId3CoreRuntimeBehaviorTest::test_behavior_analyze_unknown_local_file_returns_error_without_modules
+getID3 core subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in /work/runs/opus55/score/harness/build/sandboxes/opus_5_5/getid3-core-analyze-unknown/wp-includes/ID3/getid3.lib.php on line 21
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/opus55/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:123
+/work/runs/opus55/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:548
+
+6) GetId3CoreRuntimeBehaviorTest::test_semantic_fingerprint_for_representative_getid3_core_scenarios
+getID3 core subprocess failed.
+STDERR:
+
+STDOUT:
+
+Fatal error: Array and string offset access syntax with curly braces is no longer supported in /work/runs/opus55/score/harness/build/sandboxes/opus_5_5/getid3-core-semantic-fingerprint/wp-includes/ID3/getid3.lib.php on line 21
+
+Failed asserting that 255 is identical to 0.
+
+/work/runs/opus55/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:123
+/work/runs/opus55/score/harness/tests/files/009_GetId3CoreRuntimeBehaviorTest.php:629
+
+FAILURES!
+Tests: 631, Assertions: 6387, Failures: 6.

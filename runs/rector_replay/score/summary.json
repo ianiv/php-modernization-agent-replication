@@ -1,0 +1,21 @@
+{
+  "checks_total": 630,
+  "checks_missing_from_run": 0,
+  "checks_passed": 581,
+  "orig_checks_passed": 531,
+  "compatible_files": 82,
+  "orig_compatible_files": 83,
+  "broken_files": 7,
+  "fixed_files": 6,
+  "preserved": 519,
+  "regressions": 12,
+  "repairs": 62,
+  "unrepaired": 37,
+  "preservation_rate": 97.7,
+  "repair_rate": 62.6,
+  "rector_findings": 511,
+  "rector_resolved": 506,
+  "rector_resolution_rate": 99.0,
+  "rector_introduced": 9,
+  "files_fully_done": 77
+}

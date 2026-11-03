@@ -1,0 +1,50 @@
+{
+ "id": "096_class-ftp-pure",
+ "attempts": [
+  {
+   "attempt": 1,
+   "seconds": 38,
+   "rc": 0,
+   "is_error": false,
+   "cost_usd": 0.12145599999999998,
+   "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3491,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 4676,
+    "output_tokens_details": {
+     "thinking_tokens": 1650
+    },
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3491,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 4676,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3491,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3491
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+   },
+   "complete": true,
+   "extracted_chars": 6413
+  }
+ ],
+ "cost_usd": 0.12145599999999998,
+ "complete": true
+}
