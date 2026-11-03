@@ -2,7 +2,9 @@
 
 Paper: [`paper/tools-not-prompts.pdf`](paper/tools-not-prompts.pdf) (LaTeX source in [`paper/tex/`](paper/tex/); build with `make -C paper/tex`)
 
-Author: Ianiv Schweber - Just a random guy on the Internet
+Author: Ianiv Schweber, Principal Software Developer
+
+Reviewer: Margaret Lane, Data Engineer
 
 This repository replicates and extends Mahmud et al., *When Modernization Breaks Working Code: A Single-File Study of LLMs
 on Legacy PHP* ([arXiv:2610.40269](https://arxiv.org/abs/2610.40269); package: [Zenodo 20274676](https://zenodo.org/records/20274676)).
